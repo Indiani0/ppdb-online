@@ -1,0 +1,42 @@
+.hero{
+    height: 450px;
+    margin-top: 65px;
+    background-image: url(../img/school.jpg);
+    background-size: cover;
+
+    /* background-position: 0 0 (sumber x dan y) */
+    background-position: 0 -150px;
+    border-top: 5px solid #E2E2B6;
+    border-bottom: 5px solid #021526;
+}
+
+.hero .header-hero{
+    text-align: center;
+}
+
+.sekolah{
+    width: 80%;
+    margin: 5px auto;
+    padding: 20px;
+    /* background-color: #021526; */
+    color: #021526;
+    /* border-radius: 15px solid #021526; */
+    text-align: center;
+}
+
+.sekolah h1{
+    font-weight: bold;
+    padding: 15px;
+}
+.sekolah p{
+    font-size: 18px;
+}
+
+.box-content{
+    width: 90%;
+    /* position: absolute; */
+}
+
+.jurusan img{
+    width: 300px;
+}

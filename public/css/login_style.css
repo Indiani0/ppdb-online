@@ -1,0 +1,37 @@
+.login {
+    width: 550px;
+    margin: 10px auto;
+    box-sizing: border-box;
+
+    border: 2px solid #021526;
+    border-radius: 15px;
+
+    color: #021526;
+}
+
+.header-login {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form-login {
+    margin-top: 15px;
+    padding: 25px;
+}
+
+.form-login .form-check .form-check-label {
+    font-size: 15px;
+}
+
+.form-login a {
+    color: #021526;
+    text-align: center;
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+.form-login a:hover {
+    color: #03346E;
+    text-decoration: underline;
+}
