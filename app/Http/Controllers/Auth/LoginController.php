@@ -48,10 +48,12 @@ class LoginController extends Controller
      */
     protected function authenticated($request, $user)
     {
-        if ($user->role_id === 1) {
+        if ($user->role_id === 1 || $user->role_id === 2) {
             return redirect()->route('home');
-        } else {
+        } else if ($user->role_id === 3) {
             return redirect()->route('beranda');
+        } else {
+            return redirect()->abort(404);
         }
     }
 }
