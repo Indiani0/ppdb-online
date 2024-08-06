@@ -20,7 +20,7 @@
             {{ $slot }}
         </div>
         <div class="footer">
-            <p class="copy">Copyright 2024 | SMK Piramida</p>
+            <p class="copy">Copyright 2024 | 20110097@stmik-mi.ac.id</p>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

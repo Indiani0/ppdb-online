@@ -2,7 +2,7 @@
     <ul class="menu">
         <li class="sidebar-title">Menu</li>
         <a href="{{ route('home') }}" class='sidebar-link'>
-            <span>Dashboard</span>
+            <span>Dashboard Admin</span>
         </a>
         </li>
         <li class="sidebar-title">Master Data</li>
