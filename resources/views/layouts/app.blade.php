@@ -37,58 +37,56 @@
 </head>
 
 <body>
-    <x-layout>
-        <div id="app">
-            <div id="sidebar" class="active">
-                <div class="sidebar-wrapper active">
-                    <div class="sidebar-header">
-                        <div class="d-flex justify-content-between">
-                            <div class="logo">
-                                {{-- logo aplikasi --}}
-                                <a href="index.html"><img src="{{ asset('template/dist') }}/assets/images/logo/logo.png"
-                                        alt="Logo" srcset=""></a>
-                            </div>
-                            <div class="toggler">
-                                <a href="#" class="sidebar-hide d-xl-none d-block"><i
-                                        class="bi bi-x bi-middle"></i></a>
-                            </div>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo">
+                            {{-- logo aplikasi --}}
+                            <a href="{{ route('home') }}"><img src="{{ asset('img/logo_sekolah.png') }}" alt="Logo"
+                                    srcset="">Menu Admin</a>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i
+                                    class="bi bi-x bi-middle"></i></a>
                         </div>
                     </div>
-                    <x-sidebar />
-                    <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
                 </div>
-            </div>
-            <div id="main">
-                <header class="mb-3">
-                    <a href="#" class="burger-btn d-block d-xl-none">
-                        <i class="bi bi-justify fs-3"></i>
-                    </a>
-                </header>
-
-                <div class="page-heading">
-                    <div class="page-title">
-                        <div class="row border-bottom pb-2">
-                            <div class="col-12 justify-content-end align-items-center">
-                                <a class="float-end btn btn-primary text-capitalize" href="{{ route('logout') }}"
-                                    onclick="event.preventDefault();
-                                                                   document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
-                                </a>
-
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                    @csrf
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <section class="section pt-3">
-                        @yield('content')
-                    </section>
-                </div>
-
+                <x-sidebar />
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
             </div>
         </div>
-    </x-layout>
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <div class="page-heading">
+                <div class="page-title">
+                    <div class="row border-bottom pb-2">
+                        <div class="col-12 justify-content-end align-items-center">
+                            <a class="float-end btn btn-primary text-capitalize" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                                                   document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <section class="section pt-3">
+                    @yield('content')
+                </section>
+            </div>
+
+        </div>
+    </div>
     <script src="{{ asset('template/dist') }}/assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="{{ asset('template/dist') }}/assets/js/bootstrap.bundle.min.js"></script>
 

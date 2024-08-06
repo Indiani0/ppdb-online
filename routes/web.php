@@ -19,5 +19,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/beranda', [App\Http\Controllers\DashboardController::class, 'index'])->name('beranda');
+Route::get('/user', [App\Http\Controllers\DashboardController::class, 'index'])->name('user');
 Route::resource('users', App\Http\Controllers\UserController::class);
 Route::resource('roles', App\Http\Controllers\RoleController::class);
