@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/home_style.css">
+    <link rel="stylesheet" href="css/beranda_style.css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
         <div class="header-hero">
             <h1>PPDB TELAH DIBUKA</h1>
             <h2>Tahun Ajaran 2024/2025</h2>
-            <p><a href="/register">Ayo Daftar Sekarang!</a></p>
+            <p><a href="/register">Daftar Sekarang!</a></p>
         </div>
     </div>
     <x-layout>
@@ -31,24 +31,70 @@
         </div>
         <hr>
         <div class="box-content">
-            <div class="jurusan">
-                <h2>Jurusan</h2>
-                <img src="img/jurusan_1.png" alt="Teknik Pembuatan Kain">
-                <img src="img/jurusan_2.png" alt="Teknik Elektro Industri">
-                <img src="img/jurusan_3.png" alt="Layanan Perbankan Syariah">
+            <div class="jurusan card-content">
+                <h2>Pilihan Jurusan</h2>
+                <ul>
+                    <li>
+                        <img src="img/jurusan_1.png" alt="Teknik Pembuatan Kain">
+                        <figcaption>Teknik Pembuatan Kain</figcaption>
+                    </li>
+                    <li>
+                        <img src="img/jurusan_2.png" alt="Teknik Elektro Industri">
+                        <figcaption>Teknik Elektro Industri</figcaption>
+                    </li>
+                    <li>
+                        <img src="img/jurusan_3.png" alt="Layanan Perbankan Syariah">
+                        <figcaption>Layanan Perbankan Syariah</figcaption>
+                    </li>
+                </ul>
             </div>
-            <div class="dokumen">
+
+            <div class="dokumen card-content">
                 <h2>Dokumen Persyaratan</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus maxime iste exercitationem
-                    incidunt ducimus sint, omnis cumque voluptate libero corrupti, velit minus voluptatibus quaerat
-                    necessitatibus doloremque molestiae? Ex, illo itaque.</p>
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{{ asset('img/dokumen_1.png') }}" class="d-block w-100 custom-img" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{ asset('img/dokumen_2.png') }}" class="d-block w-100 custom-img" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{ asset('img/dokumen_3.png') }}" class="d-block w-100 custom-img" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
-            <div class="ekstrakulikuler">
+            <div class="ekstrakulikuler card-content">
                 <h2>Ektrakulikuler</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate voluptatum vitae provident
-                    autem, similique deserunt modi inventore id sed labore. Et aperiam earum cum, nostrum accusamus
-                    ut
-                    deleniti ipsam alias.</p>
+                <ul>
+                    <li>
+                        <img src="{{ asset('img/paskibra.jpg') }}" alt="">
+                        <figcaption>Pramuka</figcaption>
+                    </li>
+                    <li>
+                        <img src="{{ asset('img/futsal.jpg') }}" alt="">
+                        <figcaption>Futsal</figcaption>
+                    </li>
+                </ul>
             </div>
         </div>
     </x-layout>
