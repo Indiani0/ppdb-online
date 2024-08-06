@@ -4,7 +4,7 @@
     <div class="container">
         <div class="card">
             <div class="card-body">
-                <h1>Halo disini halamann user</h1>
+                <h1>Halo disini halaman data user</h1>
 
                 <table class="table table-bordered">
                     <thead>
@@ -19,7 +19,7 @@
                             <tr>
                                 <td>{{ $user->name }}</td>
                                 <td>{{ $user->email }}</td>
-                                <td>{{ $user->role_id }}</td>
+                                <td>{{ $user->role->role }}</td>
                             </tr>
                         @endforeach
                     </tbody>

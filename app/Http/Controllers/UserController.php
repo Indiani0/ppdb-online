@@ -25,7 +25,8 @@ class UserController extends Controller
     public function index()
     {
         // Ambil semua data user dari database
-        $users = User::all();
+        // $users = User::all();
+        $users = User::with('role')->get();
 
         // Kirim data user ke view
         return view('user', compact('users'));
