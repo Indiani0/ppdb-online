@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('dashboard');
+    return view('beranda');
 });
 
 Route::get('/form', function () {
@@ -18,6 +18,6 @@ Route::get('/login', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+Route::get('/beranda', [App\Http\Controllers\DashboardController::class, 'index'])->name('beranda');
 Route::resource('users', App\Http\Controllers\UserController::class);
 Route::resource('roles', App\Http\Controllers\RoleController::class);

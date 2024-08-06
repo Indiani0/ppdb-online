@@ -51,7 +51,7 @@ class LoginController extends Controller
         if ($user->role_id === 1 || $user->role_id === 2) {
             return redirect()->route('home');
         } else if ($user->role_id === 3) {
-            return redirect()->route('dashboard');
+            return redirect()->route('beranda');
         } else {
             return redirect()->abort(404);
         }
