@@ -23,8 +23,6 @@
         color: #021526;
     }
 
-
-
     .header-register {
         margin-top: 30px;
         text-align: center;
@@ -32,6 +30,14 @@
 
     .form-register {
         margin-top: 30px;
+    }
+
+    .register a {
+        text-decoration: none;
+    }
+
+    .register a:hover {
+        text-decoration: underline;
     }
 </style>
 
