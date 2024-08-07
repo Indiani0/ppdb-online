@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Role;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -30,6 +31,30 @@ class UserController extends Controller
 
         // Kirim data user ke view
         return view('user', compact('users'));
+    }
+
+    public function edit($id)
+    {
+        $user = User::find($id);
+        $roles = Role::all(); // Ambil semua roles dari database
+        return view('users.edit', compact('user', 'roles'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users,email,' . $id,
+            'role_id' => 'required|integer',
+        ]);
+
+        $user = User::find($id);
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->role_id = $request->role_id;
+        $user->save();
+
+        return redirect()->route('users.index')->with('success', 'User berhasil diperbarui');
     }
 
     public function destroy($id)

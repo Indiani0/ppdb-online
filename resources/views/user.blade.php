@@ -4,7 +4,7 @@
     <div class="container">
         <div class="card">
             <div class="card-body">
-                <h1>Halo disini halaman data user</h1>
+                <h1>Selamat Datang di Halaman Data User</h1>
 
                 @if (session('success'))
                     <div class="alert alert-success">
