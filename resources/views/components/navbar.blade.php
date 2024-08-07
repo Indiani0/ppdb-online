@@ -6,17 +6,21 @@
                 <li><a href="{{ route('beranda') }}">Home</a></li>
                 <li><a href="{{ route('form') }}">Formulir PPDB</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropbtn">Profile</a>
-                    <div class="dropdown-content">
-                        <a href="{{ route('profile') }}">Profile</a>
-                        <a href="{{ route('logout') }}"
-                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                            Logout
+                    <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        {{ Auth::user()->name }}
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a class="dropdown-item" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
                         </a>
+
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
                         </form>
                     </div>
+                </li>
             @endif
         @else
             <li><a href="/">Home</a></li>
