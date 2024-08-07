@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/beranda_style.css">
 </head>
@@ -15,7 +16,6 @@
         <div class="header-hero">
             <h1>PPDB TELAH DIBUKA</h1>
             <h2>Tahun Ajaran 2024/2025</h2>
-            {{-- <p><a href={{ route('register') }}>Daftar Sekarang!</a></p> --}}
             @guest
                 @if (Route::has('login'))
                     <p>

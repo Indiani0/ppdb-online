@@ -6,40 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Mazer Admin Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    {{-- <link rel="stylesheet" href="{{ asset('template/dist') }}/assets/css/bootstrap.css"> --}}
     <link rel="stylesheet" href="{{ asset('template/dist') }}/assets/vendors/bootstrap-icons/bootstrap-icons.css">
     <link rel="stylesheet" href="{{ asset('template/dist') }}/assets/css/app.css">
     <link rel="stylesheet" href="{{ asset('template/dist') }}/assets/css/pages/auth.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/register_style.css">
 </head>
-<style>
-    .register {
-        width: 550px;
-        margin: 10px auto;
-        box-sizing: border-box;
-
-        border: 2px solid #021526;
-        border-radius: 15px;
-
-        color: #021526;
-    }
-
-    .header-register {
-        margin-top: 30px;
-        text-align: center;
-    }
-
-    .form-register {
-        margin-top: 30px;
-    }
-
-    .register a {
-        text-decoration: none;
-    }
-
-    .register a:hover {
-        text-decoration: underline;
-    }
-</style>
 
 <body>
     <x-layout>

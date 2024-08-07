@@ -1,0 +1,27 @@
+.register {
+    width: 550px;
+    margin: 10px auto;
+    box-sizing: border-box;
+
+    border: 2px solid #021526;
+    border-radius: 15px;
+
+    color: #021526;
+}
+
+.header-register {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form-register {
+    margin-top: 30px;
+}
+
+.register a {
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
