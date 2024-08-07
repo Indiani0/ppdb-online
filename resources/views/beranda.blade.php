@@ -51,7 +51,7 @@
 
             <div class="dokumen card-content">
                 <h2>Dokumen Persyaratan</h2>
-                <div id="carouselExampleIndicators" class="carousel slide">
+                <div id="carouselExampleIndicators" class="carousel carousel-dark slide">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
