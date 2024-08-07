@@ -31,4 +31,12 @@ class UserController extends Controller
         // Kirim data user ke view
         return view('user', compact('users'));
     }
+
+    public function destroy($id)
+    {
+        $user = User::find($id);
+        $user->delete();
+
+        return redirect()->route('users.index')->with('success', 'User berhasil dihapus');
+    }
 }
