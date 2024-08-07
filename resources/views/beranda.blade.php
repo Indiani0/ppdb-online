@@ -15,7 +15,16 @@
         <div class="header-hero">
             <h1>PPDB TELAH DIBUKA</h1>
             <h2>Tahun Ajaran 2024/2025</h2>
-            <p><a href="/register">Daftar Sekarang!</a></p>
+            {{-- <p><a href={{ route('register') }}>Daftar Sekarang!</a></p> --}}
+            @guest
+                @if (Route::has('login'))
+                    <p>
+                        <a href={{ route('register') }}>Daftar Sekarang!</a>
+                    </p>
+                @endif
+            @else
+                <p>Silahkan mengisi formulir pendaftaran pada menu yang tersedia</p>
+            @endguest
         </div>
     </div>
     <x-layout>
@@ -94,6 +103,11 @@
                         <img src="{{ asset('img/futsal.jpg') }}" alt="">
                         <figcaption>Futsal</figcaption>
                     </li>
+                    <li>
+                        <img src="{{ asset('img/kesenian.jpg') }}" alt="">
+                        <figcaption>Kesenian</figcaption>
+                    </li>
+                    <li class="etc">Dan masih banyak lagi!!. Segera daftarkan diri di SMK Piramida</li>
                 </ul>
             </div>
         </div>

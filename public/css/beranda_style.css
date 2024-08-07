@@ -97,8 +97,11 @@
     height: auto;
     margin: auto;
     display: block;
-    
-    z-index: 9999;
+}
+
+.dokumen h2{
+    font-size: 30px;
+    padding: 10px;
 }
 
 .ekstrakulikuler h2{
@@ -119,7 +122,7 @@
 }
 
 .ekstrakulikuler img{
-    width: 400px;
+    width: 250px;
 }
 
 .ekstrakulikuler figcaption{
@@ -127,4 +130,13 @@
     padding: 10px;
     font-size: 18px;
     font-weight: lighter;
+}
+
+.ekstrakulikuler .etc{
+    margin-top: 20px;
+    color: #021526;
+    background-color: whitesmoke;
+    border: 2px solid #021526;
+    border-radius: 10px;
+
 }

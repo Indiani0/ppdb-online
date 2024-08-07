@@ -4,7 +4,7 @@
         @auth
             @if (Auth::user()->role_id === 3)
                 <li><a href="{{ route('beranda') }}">Home</a></li>
-                <li><a href="{{ route('form') }}">Formulir</a></li>
+                <li><a href="{{ route('form') }}">Formulir PPDB</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">Profile</a>
                     <div class="dropdown-content">
