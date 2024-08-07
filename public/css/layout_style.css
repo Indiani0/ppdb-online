@@ -35,6 +35,7 @@ body{
     left: 0;
     right: 0;
     height: 65px;
+    z-index: 1;
 }
 
 nav{
