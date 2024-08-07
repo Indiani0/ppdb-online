@@ -8,7 +8,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropbtn">Profile</a>
                     <div class="dropdown-content">
-                        <a href="#">Profile</a>
+                        <a href="{{ route('profile') }}">Profile</a>
                         <a href="{{ route('logout') }}"
                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                             Logout
