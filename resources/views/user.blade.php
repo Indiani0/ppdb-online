@@ -12,6 +12,10 @@
                     </div>
                 @endif
 
+                <div class="mb-3">
+                    <a href="{{ route('users.create') }}" class="btn btn-primary">Tambah Data User</a>
+                </div>
+
                 <table class="table">
                     <thead>
                         <tr>

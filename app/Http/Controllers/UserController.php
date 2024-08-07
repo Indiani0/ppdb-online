@@ -33,6 +33,12 @@ class UserController extends Controller
         return view('user', compact('users'));
     }
 
+    public function create()
+    {
+        $roles = Role::all();
+        return view('users.create', compact('roles'));
+    }
+
     public function edit($id)
     {
         $user = User::find($id);
