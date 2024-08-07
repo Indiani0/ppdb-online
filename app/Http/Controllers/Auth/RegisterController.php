@@ -76,6 +76,6 @@ class RegisterController extends Controller
     protected function registered(Request $request, $user)
     {
         Auth::logout();
-        return redirect('/login');
+        return redirect('/login')->with('status', 'Selamat! akun anda telah terdaftar. Silahkan Login.');
     }
 }

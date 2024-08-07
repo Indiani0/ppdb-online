@@ -23,7 +23,13 @@
                     <h1>Login PPDB Online</h1>
                     <p>Masuk dengan data yang Anda masukkan saat registrasi</p>
                 </div>
+
                 <div class="form-login">
+                    @if (session('status'))
+                        <div class="alert alert-success">
+                            {{ session('status') }}
+                        </div>
+                    @endif
                     <form action="{{ route('login') }}" method="POST">
                         @csrf
                         <div class="form-group position-relative has-icon-left mb-4">
