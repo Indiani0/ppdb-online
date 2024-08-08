@@ -35,7 +35,6 @@
                     <div class="form-group">
                         <label for="role_id">Role</label>
                         <select class="form-control" id="role_id" name="role_id" required>
-                            <!-- Asumsikan Anda sudah memiliki daftar role di database -->
                             @foreach ($roles as $role)
                                 <option value="{{ $role->id }}" {{ $role->id == $user->role_id ? 'selected' : '' }}>
                                     {{ $role->role }}
