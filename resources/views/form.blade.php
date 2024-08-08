@@ -200,13 +200,13 @@
                         </tr>
 
                         <tr>
-                            <td><label for="kartukeluarga">Kartu Keluarga</label></td>
-                            <td>: <input type="file" name="kartukeluarga" id="kartukeluarga" required></td>
+                            <td><label for="kartu_keluarga">Kartu Keluarga</label></td>
+                            <td>: <input type="file" name="kartu_keluarga" id="kartu_keluarga" required></td>
                         </tr>
 
                         <tr>
-                            <td><label for="aktalahir">Akta Kelahiran</label></td>
-                            <td>: <input type="file" name="aktalahir" id="aktalahir" required></td>
+                            <td><label for="akta_lahir">Akta Kelahiran</label></td>
+                            <td>: <input type="file" name="akta_lahir" id="akta_lahir" required></td>
                         </tr>
 
                         <tr>
@@ -215,13 +215,13 @@
                         </tr>
 
                         <tr>
-                            <td><label for="fotosiswa">Foto Siswa - Background Merah</label></td>
-                            <td>: <input type="file" name="fotosiswa" id="fotosiswa" required></td>
+                            <td><label for="foto_siswa">Foto Siswa - Background Merah</label></td>
+                            <td>: <input type="file" name="foto_siswa" id="foto_siswa" required></td>
                         </tr>
 
                         <tr>
-                            <td><label for="suratlulus">Surat Keterangan Lulus / Ijazah / SKHUN</label></td>
-                            <td>: <input type="file" name="suratlulus" id="suratlulus" required></td>
+                            <td><label for="surat_lulus">Surat Keterangan Lulus / Ijazah / SKHUN</label></td>
+                            <td>: <input type="file" name="surat_lulus" id="surat_lulus" required></td>
                         </tr>
 
 

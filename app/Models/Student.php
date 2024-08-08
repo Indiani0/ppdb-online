@@ -30,5 +30,10 @@ class Student extends Model
         'nama_ibu',
         'pekerjaan_ibu',
         'alamat_ibu',
+        'kartu_keluarga',
+        'akta_lahir',
+        'ktp',
+        'foto_siswa',
+        'surat_lulus',
     ];
 }

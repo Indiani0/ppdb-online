@@ -33,6 +33,11 @@ return new class extends Migration
             $table->string('nama_ibu');
             $table->string('pekerjaan_ibu');
             $table->text('alamat_ibu');
+            $table->string('kartu_keluarga')->nullable();
+            $table->string('akta_lahir')->nullable();
+            $table->string('ktp')->nullable();
+            $table->string('foto_siswa')->nullable();
+            $table->string('surat_lulus')->nullable();
             $table->timestamps();
         });
     }
