@@ -44,10 +44,10 @@ class Student extends Model
         'minat_jurusan',
 
         // Dokumen Pendukung
-        'kartu_keluarga',
-        'akta_lahir',
-        'ktp',
+        'scan_kk',
+        'scan_akta',
+        'scan_ktp_wali',
         'foto_siswa',
-        'surat_lulus',
+        'scan_surat_lulus',
     ];
 }

@@ -239,18 +239,18 @@
                         </tr>
 
                         <tr>
-                            <td><label for="kartu_keluarga">Kartu Keluarga</label></td>
-                            <td>: <input type="file" name="kartu_keluarga" id="kartu_keluarga" required></td>
+                            <td><label for="scan_kk">Kartu Keluarga</label></td>
+                            <td>: <input type="file" name="scan_kk" id="scan_kk" required></td>
                         </tr>
 
                         <tr>
-                            <td><label for="akta_lahir">Akta Kelahiran</label></td>
-                            <td>: <input type="file" name="akta_lahir" id="akta_lahir" required></td>
+                            <td><label for="scan_akta">Akta Kelahiran</label></td>
+                            <td>: <input type="file" name="scan_akta" id="scan_akta" required></td>
                         </tr>
 
                         <tr>
-                            <td><label for="ktp">KTP Orang Tua / Wali</label></td>
-                            <td>: <input type="file" name="ktp" id="ktp" required></td>
+                            <td><label for="scan_ktp_wali">KTP Orang Tua / Wali</label></td>
+                            <td>: <input type="file" name="scan_ktp_wali" id="scan_ktp_wali" required></td>
                         </tr>
 
                         <tr>
@@ -259,8 +259,8 @@
                         </tr>
 
                         <tr>
-                            <td><label for="surat_lulus">Surat Keterangan Lulus / Ijazah / SKHUN</label></td>
-                            <td>: <input type="file" name="surat_lulus" id="surat_lulus" required></td>
+                            <td><label for="scan_surat_lulus">Surat Keterangan Lulus / Ijazah / SKHUN</label></td>
+                            <td>: <input type="file" name="scan_surat_lulus" id="scan_surat_lulus" required></td>
                         </tr>
 
 

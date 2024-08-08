@@ -65,18 +65,18 @@ class FormController extends Controller
             'minat_jurusan' => 'required|string',
 
             // Dokumen Pendukung
-            'kartu_keluarga' => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048',
-            'akta_lahir' => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048',
-            'ktp' => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048',
+            'scan_kk' => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048',
+            'scan_akta' => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048',
+            'scan_ktp_wali' => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048',
             'foto_siswa' => 'required|file|mimes:jpg,jpeg,png|max:2048',
-            'surat_lulus' => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048',
+            'scan_surat_lulus' => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048',
         ]);
 
-        $validated['kartu_keluarga'] = $request->file('kartu_keluarga')->store('uploads', 'public');
-        $validated['akta_lahir'] = $request->file('akta_lahir')->store('uploads', 'public');
-        $validated['ktp'] = $request->file('ktp')->store('uploads', 'public');
+        $validated['scan_kk'] = $request->file('scan_kk')->store('uploads', 'public');
+        $validated['scan_akta'] = $request->file('scan_akta')->store('uploads', 'public');
+        $validated['scan_ktp_wali'] = $request->file('scan_ktp_wali')->store('uploads', 'public');
         $validated['foto_siswa'] = $request->file('foto_siswa')->store('uploads', 'public');
-        $validated['surat_lulus'] = $request->file('surat_lulus')->store('uploads', 'public');
+        $validated['scan_surat_lulus'] = $request->file('scan_surat_lulus')->store('uploads', 'public');
 
         // Simpan data ke database
         Student::create($validated);

@@ -6,9 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
         Schema::create('students', function (Blueprint $table) {
@@ -47,11 +44,11 @@ return new class extends Migration
             $table->string('minat_jurusan');
 
             // Dokumen Pendukung
-            $table->string('kartu_keluarga')->nullable();
-            $table->string('akta_lahir')->nullable();
-            $table->string('ktp')->nullable();
+            $table->string('scan_kk')->nullable();
+            $table->string('scan_akta')->nullable();
+            $table->string('scan_ktp_wali')->nullable();
             $table->string('foto_siswa')->nullable();
-            $table->string('surat_lulus')->nullable();
+            $table->string('scan_surat_lulus')->nullable();
             $table->timestamps();
         });
     }
