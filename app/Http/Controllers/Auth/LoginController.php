@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
 {
@@ -37,6 +38,19 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
         $this->middleware('auth')->only('logout');
+    }
+
+    protected function sendFailedLoginResponse(Request $request)
+    {
+        $errors = [$this->username() => 'Username atau Password anda salah, silahkan periksa kembali!'];
+
+        if (!\App\Models\User::where($this->username(), $request->{$this->username()})->exists()) {
+            $errors = [$this->username() => 'Data Tidak ditemukan! Silahkan daftar terlebih dahulu'];
+        }
+
+        return redirect()->back()
+            ->withInput($request->only($this->username(), 'remember'))
+            ->withErrors($errors);
     }
 
     /**
