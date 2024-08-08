@@ -8,6 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
     {{-- <link rel="stylesheet" href="{{ asset('template/dist') }}/assets/css/bootstrap.css"> --}}
 
     <link rel="stylesheet" href="{{ asset('template/dist') }}/assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
@@ -29,8 +30,10 @@
             font-size: 24px;
         }
     </style>
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <!-- Scripts -->
     @viteReactRefresh
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -53,10 +56,13 @@
                         </div>
                     </div>
                 </div>
+
                 <x-sidebar />
+
                 <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
             </div>
         </div>
+
         <div id="main">
             <header class="mb-3">
                 <a href="#" class="burger-btn d-block d-xl-none">
@@ -68,28 +74,25 @@
                 <div class="page-title">
                     <div class="row border-bottom pb-2">
                         <div class="col-12 justify-content-end align-items-center">
-                            <a class="float-end btn btn-primary text-capitalize" href="{{ route('logout') }}"
-                                onclick="event.preventDefault();
-                                                                   document.getElementById('logout-form').submit();">
+                            <a class="float-end btn btn-danger text-capitalize" href="#" data-bs-toggle="modal"
+                                data-bs-target="#logoutModal">
                                 {{ __('Logout') }}
                             </a>
-
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                @csrf
-                            </form>
                         </div>
                     </div>
                 </div>
+
                 <section class="section pt-3">
                     @yield('content')
                 </section>
             </div>
 
+            <x-logout-modal></x-logout-modal>
         </div>
     </div>
+
     <script src="{{ asset('template/dist') }}/assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="{{ asset('template/dist') }}/assets/js/bootstrap.bundle.min.js"></script>
-
     <script src="{{ asset('template/dist') }}/assets/js/main.js"></script>
 </body>
 
