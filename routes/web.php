@@ -11,6 +11,10 @@ Route::get('/form', function () {
     return view('form');
 });
 
+Route::get('/student', function () {
+    return view('student');
+});
+
 Route::get('/login', function () {
     return view('auth.login');
 });
@@ -20,6 +24,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/beranda', [App\Http\Controllers\DashboardController::class, 'index'])->name('beranda');
 Route::get('/form', [App\Http\Controllers\FormController::class, 'index'])->name('form');
+Route::get('/student', [App\Http\Controllers\StudentController::class, 'index'])->name('student');
 Route::get('/users/create', [App\Http\Controllers\UserController::class, 'create'])->name('users.create');
 
 Route::post('/users', [App\Http\Controllers\UserController::class, 'store'])->name('users.store');

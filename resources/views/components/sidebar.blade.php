@@ -26,10 +26,10 @@
             </a>
         </li>
 
-        {{-- belum diubah Data Calon Siswa & Data Klasifikasi --}}
+        {{-- Data Calon Siswa & Data Klasifikasi --}}
         <li class="sidebar-title">Master Data</li>
         <li class="sidebar-item">
-            <a href="#" class='sidebar-link'>
+            <a href="{{ route('student') }}" class='sidebar-link'>
                 <span>Peserta Didik</span>
             </a>
         </li>
