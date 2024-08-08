@@ -7,10 +7,6 @@ Route::get('/', function () {
     return view('beranda');
 });
 
-Route::get('/form', function () {
-    return view('form');
-});
-
 Route::get('/student', function () {
     return view('student');
 });
@@ -28,6 +24,7 @@ Route::get('/student', [App\Http\Controllers\StudentController::class, 'index'])
 Route::get('/users/create', [App\Http\Controllers\UserController::class, 'create'])->name('users.create');
 
 Route::post('/users', [App\Http\Controllers\UserController::class, 'store'])->name('users.store');
+Route::post('/student', [App\Http\Controllers\FormController::class, 'store'])->name('students.store');
 Route::post('/logout', function () {
     Auth::logout();
     return redirect('/');

@@ -24,10 +24,25 @@
                     Selamat Datang di Aplikasi PPDB SMK Piramida, Silahkan isi formulir dibawah untuk melakukan
                     pendaftaran!
                 </p>
+
+                @if (session('success'))
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                @endif
+
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        @foreach ($errors->all() as $error)
+                            {{ $error }}
+                        @endforeach
+                    </div>
+                @endif
             </div>
 
             <div class="form-ppdb card-content">
-                <form action=" " method="POST">
+                <form action="{{ route('students.store') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
                     <table>
                         {{-- Form Identitas Diri --}}
                         <tr>
@@ -137,7 +152,6 @@
                             <th><br>III. IDENTITAS ORANG TUA / WALI</th>
                         </tr>
 
-                        {{-- Ayah --}}
                         <tr>
                             <th>Ayah :</th>
                         </tr>
@@ -159,7 +173,6 @@
                             </td>
                         </tr>
 
-                        {{-- Ibu --}}
                         <tr>
                             <th>Ibu :</th>
                         </tr>
