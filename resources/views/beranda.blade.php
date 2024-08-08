@@ -16,6 +16,7 @@
         <div class="header-hero">
             <h1>PPDB TELAH DIBUKA</h1>
             <h2>Tahun Ajaran 2024/2025</h2>
+
             @guest
                 @if (Route::has('login'))
                     <p>
@@ -27,6 +28,7 @@
             @endguest
         </div>
     </div>
+
     <x-layout>
         <div class="sekolah">
             <h1>Profil SMK Piramida</h1>
@@ -38,7 +40,9 @@
                 pendidikan, tenaga kependidikan hingga sarana prasarana penunjang pendidikan berkualitas.
             </p>
         </div>
+
         <hr>
+
         <div class="box-content">
             <div class="jurusan card-content">
                 <h2>Pilihan Jurusan</h2>
@@ -60,6 +64,7 @@
 
             <div class="dokumen card-content">
                 <h2>Dokumen Persyaratan</h2>
+
                 <div id="carouselExampleIndicators" class="carousel carousel-dark slide">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -69,6 +74,7 @@
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
                     </div>
+
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="{{ asset('img/dokumen_1.png') }}" class="d-block w-100 custom-img" alt="...">
@@ -80,6 +86,7 @@
                             <img src="{{ asset('img/dokumen_3.png') }}" class="d-block w-100 custom-img" alt="...">
                         </div>
                     </div>
+
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -92,6 +99,7 @@
                     </button>
                 </div>
             </div>
+
             <div class="ekstrakulikuler card-content">
                 <h2>Ektrakulikuler</h2>
                 <ul>
