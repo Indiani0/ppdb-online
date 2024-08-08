@@ -60,29 +60,29 @@
                         </tr>
 
                         <tr>
-                            <td><label for="namalengkap">Nama Lengkap</label></td>
-                            <td>: <input type="text" name="namalengkap" id="namalengkap" required></td>
+                            <td><label for="nama_siswa">Nama Lengkap</label></td>
+                            <td>: <input type="text" name="nama_siswa" id="nama_siswa" required></td>
                         </tr>
 
                         <tr>
-                            <td><label for="jeniskelamin">Jenis Kelamin</label></td>
+                            <td><label for="jenis_kelamin">Jenis Kelamin</label></td>
                             <td>:
-                                <input type="radio" name="jeniskelamin" id="pria">
+                                <input type="radio" name="jenis_kelamin" id="pria">
                                 <label for="pria">Pria</label>
 
-                                <input type="radio" name="jeniskelamin" id="wanita">
+                                <input type="radio" name="jenis_kelamin" id="wanita">
                                 <label for="wanita">Wanita</label>
                             </td>
                         </tr>
 
                         <tr>
-                            <td><label for="tempatlahir">Tempat Lahir</label></td>
-                            <td>: <input type="text" name="tempatlahir" id="tempatlahir" required></td>
+                            <td><label for="tempat_lahir">Tempat Lahir</label></td>
+                            <td>: <input type="text" name="tempat_lahir" id="tempat_lahir" required></td>
                         </tr>
 
                         <tr>
-                            <td><label for="tanggallahir">Tanggal Lahir</label></td>
-                            <td>: <input type="date" name="tanggallahir" id="tanggallahir" required></td>
+                            <td><label for="tanggal_lahir">Tanggal Lahir</label></td>
+                            <td>: <input type="date" name="tanggal_lahir" id="tanggal_lahir" required></td>
                         </tr>
 
                         <tr>
@@ -98,9 +98,9 @@
                         </tr>
 
                         <tr>
-                            <td><label for="alamat">Alamat Rumah</label></td>
+                            <td><label for="alamat_siswa">Alamat Rumah</label></td>
                             <td>:
-                                <textarea name="alamat" id="alamat" cols="30" rows="4" required></textarea>
+                                <textarea name="alamat_siswa" id="alamat_siswa" cols="30" rows="4" required></textarea>
                             </td>
                         </tr>
 
@@ -123,26 +123,26 @@
                         </tr>
 
                         <tr>
-                            <td><label for="sekolah">Nama Sekolah / Madrasah</label></td>
-                            <td>: <input type="text" name="sekolah" id="sekolah" required></td>
+                            <td><label for="nama_asal_sekolah">Nama Sekolah / Madrasah</label></td>
+                            <td>: <input type="text" name="nama_asal_sekolah" id="nama_asal_sekolah" required></td>
                         </tr>
 
                         <tr>
-                            <td><label for="jenjang">Jenjang Sekolah</label></td>
-                            <td>: <input type="text" name="jenjang" id="jenjang" placeholder="SMP/MTs/dll"
-                                    required>
+                            <td><label for="jenjang_sekolah">Jenjang Sekolah</label></td>
+                            <td>: <input type="text" name="jenjang_sekolah" id="jenjang_sekolah"
+                                    placeholder="SMP/MTs/dll" required>
                             </td>
                         </tr>
 
                         <tr>
-                            <td><label for="tahunlulus">Tahun Lulus</label></td>
-                            <td>: <input type="number" name="tahunlulus" id="tahunlulus" placeholder="2020"></td>
+                            <td><label for="tahun_lulus">Tahun Lulus</label></td>
+                            <td>: <input type="number" name="tahun_lulus" id="tahun_lulus" placeholder="2020"></td>
                         </tr>
 
                         <tr>
-                            <td><label for="alamatsekolah">Alamat Sekolah</label></td>
+                            <td><label for="alamat_sekolah">Alamat Sekolah</label></td>
                             <td>:
-                                <textarea name="alamatsekolah" id="alamatsekolah" cols="30" rows="4" required></textarea>
+                                <textarea name="alamat_sekolah" id="alamat_sekolah" cols="30" rows="4" required></textarea>
                             </td>
                         </tr>
 
@@ -157,19 +157,19 @@
                         </tr>
 
                         <tr>
-                            <td><label for="ayah">Nama Lengkap</label></td>
-                            <td>: <input type="text" id="ayah" name="ayah" required></td>
+                            <td><label for="nama_ayah">Nama Lengkap</label></td>
+                            <td>: <input type="text" id="nama_ayah" name="nama_ayah" required></td>
                         </tr>
 
                         <tr>
-                            <td><label for="pekerjaanayah">Pekerjaan</label></td>
-                            <td>: <input type="text" id="pekerjaanayah" name="pekerjaanayah" required></td>
+                            <td><label for="pekerjaan_ayah">Pekerjaan</label></td>
+                            <td>: <input type="text" id="pekerjaan_ayah" name="pekerjaan_ayah" required></td>
                         </tr>
 
                         <tr>
-                            <td><label for="alamatayah">Alamat</label></td>
+                            <td><label for="alamat_ayah">Alamat</label></td>
                             <td>:
-                                <textarea name="alamatayah" id="alamatayah" cols="30" rows="4" required></textarea>
+                                <textarea name="alamat_ayah" id="alamat_ayah" cols="30" rows="4" required></textarea>
                             </td>
                         </tr>
 
@@ -178,19 +178,19 @@
                         </tr>
 
                         <tr>
-                            <td><label for="ibu">Nama Lengkap</label></td>
-                            <td>: <input type="text" id="ibu" name="ibu" required></td>
+                            <td><label for="nama_ibu">Nama Lengkap</label></td>
+                            <td>: <input type="text" id="nama_ibu" name="nama_ibu" required></td>
                         </tr>
 
                         <tr>
-                            <td><label for="pekerjaanibu">Pekerjaan</label></td>
-                            <td>: <input type="text" id="pekerjaanibu" name="pekerjaanibu" required></td>
+                            <td><label for="pekerjaan_ibu">Pekerjaan</label></td>
+                            <td>: <input type="text" id="pekerjaan_ibu" name="pekerjaan_ibu" required></td>
                         </tr>
 
                         <tr>
-                            <td><label for="alamatibu">Alamat</label></td>
+                            <td><label for="alamat_ibu">Alamat</label></td>
                             <td>:
-                                <textarea name="alamatibu" id="alamatibu" cols="30" rows="4" required></textarea>
+                                <textarea name="alamat_ibu" id="alamat_ibu" cols="30" rows="4" required></textarea>
                             </td>
                         </tr>
 
