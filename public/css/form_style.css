@@ -6,7 +6,6 @@
     width: 70%;
     margin: 20px auto;
     padding: 10px;
-    /* background-color: aqua; */
 }
 
 .header-daftar{
@@ -31,5 +30,4 @@
 
 form tr th{
     padding-bottom: 10px;
-    /* background-color: aqua; */
 }
