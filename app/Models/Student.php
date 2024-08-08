@@ -10,6 +10,7 @@ class Student extends Model
     use HasFactory;
 
     protected $fillable = [
+        // Identitas Calon Siswa
         'nik',
         'nisn',
         'nama_siswa',
@@ -20,16 +21,29 @@ class Student extends Model
         'alamat_siswa',
         'email',
         'telepon',
+
+        // Sekolah Asal
         'nama_asal_sekolah',
         'jenjang_sekolah',
         'tahun_lulus',
         'alamat_sekolah',
+
+        // Identitas Orang Tua
         'nama_ayah',
         'pekerjaan_ayah',
         'alamat_ayah',
         'nama_ibu',
         'pekerjaan_ibu',
         'alamat_ibu',
+
+        // Data Pendukung
+        'nilai_mtk',
+        'nilai_ipa',
+        'nilai_bhs_inggris',
+        'nilai_bhs_indo',
+        'minat_jurusan',
+
+        // Dokumen Pendukung
         'kartu_keluarga',
         'akta_lahir',
         'ktp',

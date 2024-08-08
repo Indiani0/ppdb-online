@@ -31,6 +31,7 @@ class FormController extends Controller
     {
         // Validasi data
         $validated = $request->validate([
+            // Identitas Calon Siswa
             'nik' => 'required|numeric',
             'nisn' => 'required|numeric',
             'nama_siswa' => 'required|string|max:255',
@@ -41,16 +42,29 @@ class FormController extends Controller
             'alamat_siswa' => 'required|string',
             'email' => 'required|email',
             'telepon' => 'required|string',
+
+            // Sekolah Asal
             'nama_asal_sekolah' => 'required|string|max:255',
             'jenjang_sekolah' => 'required|string|max:255',
             'tahun_lulus' => 'required|numeric',
             'alamat_sekolah' => 'required|string',
+
+            // Identitas Orang Tua
             'nama_ayah' => 'required|string|max:255',
             'pekerjaan_ayah' => 'required|string|max:255',
             'alamat_ayah' => 'required|string',
             'nama_ibu' => 'required|string|max:255',
             'pekerjaan_ibu' => 'required|string|max:255',
             'alamat_ibu' => 'required|string',
+
+            // Data Pendukung
+            'nilai_mtk' => 'required|numeric',
+            'nilai_ipa' => 'required|numeric',
+            'nilai_bhs_inggris' => 'required|numeric',
+            'nilai_bhs_indo' => 'required|numeric',
+            'minat_jurusan' => 'required|string',
+
+            // Dokumen Pendukung
             'kartu_keluarga' => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048',
             'akta_lahir' => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048',
             'ktp' => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048',
