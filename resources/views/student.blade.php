@@ -21,11 +21,18 @@
                         </tr>
                     </thead>
                     <tbody>
-                        {{-- @foreach ($users as $user)
+                        @foreach ($students as $index => $student)
                             <tr>
-                                <td>{{ $user->id }}</td>
+                                <td>{{ $index + 1 }}</td>
+                                <td>{{ $student->nik }}</td>
+                                <td>{{ $student->nisn }}</td>
+                                <td>{{ $student->nama_siswa }}</td>
+                                <td>{{ $student->jenis_kelamin }}</td>
+                                <td>{{ $student->nama_asal_sekolah }}</td>
+                                <td>{{ $student->nama_ibu }}</td>
+                                <td>{{ $student->nama_ayah }}</td>
                             </tr>
-                        @endforeach --}}
+                        @endforeach
                     </tbody>
                 </table>
             </div>
