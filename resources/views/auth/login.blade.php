@@ -25,11 +25,13 @@
                 </div>
 
                 <div class="form-login">
+
                     @if (session('status'))
                         <div class="alert alert-success">
                             {{ session('status') }}
                         </div>
                     @endif
+
                     @if ($errors->any())
                         <div class="alert alert-danger">
                             @foreach ($errors->all() as $error)
@@ -37,6 +39,7 @@
                             @endforeach
                         </div>
                     @endif
+
                     <form action="{{ route('login') }}" method="POST">
                         @csrf
                         <div class="form-group position-relative has-icon-left mb-4">
@@ -46,6 +49,7 @@
                                 <i class="bi bi-person"></i>
                             </div>
                         </div>
+
                         <div class="form-group position-relative has-icon-left mb-4">
                             <input type="password" class="form-control form-control-xl" name="password"
                                 placeholder="Password" required>
@@ -53,6 +57,7 @@
                                 <i class="bi bi-shield-lock"></i>
                             </div>
                         </div>
+
                         <div class="form-check form-check-lg d-flex align-items-end">
                             <input class="form-check-input me-2" type="checkbox" name="flexCheckDefault"
                                 id="flexCheckDefault" value="">
@@ -60,7 +65,9 @@
                                 Keep me logged in
                             </label>
                         </div>
+
                         <br>
+
                         <a href="{{ route('register') }}" class="nav-link">Belum memiliki akun? Daftar Disini!</a>
                         <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg">Login</button>
                     </form>

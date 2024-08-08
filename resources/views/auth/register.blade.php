@@ -23,6 +23,7 @@
                     <h1>Daftar Akun</h1>
                     <p>Masukkan data Anda untuk membuat akun</p>
                 </div>
+
                 <div class="form-register">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
@@ -97,12 +98,12 @@
                         </div>
                     </form>
                 </div>
+
                 <div class="text-center mt-4 text-lg fs-5">
                     <p class='text-gray-600'>Sudah memiliki akun? <a href="{{ route('login') }}"
                             class="font-bold">Masuk</a>.</p>
                 </div>
             </div>
-
         </div>
     </x-layout>
 </body>
