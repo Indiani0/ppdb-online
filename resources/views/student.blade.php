@@ -16,8 +16,8 @@
                             <th>Nama Siswa</th>
                             <th>Jenis Kelamin</th>
                             <th>Asal Sekolah</th>
-                            <th>Nama Ibu</th>
-                            <th>Nama Ayah</th>
+                            <th>Alamat</th>
+                            <th>Minat Jurusan</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -29,8 +29,8 @@
                                 <td>{{ $student->nama_siswa }}</td>
                                 <td>{{ $student->jenis_kelamin }}</td>
                                 <td>{{ $student->nama_asal_sekolah }}</td>
-                                <td>{{ $student->nama_ibu }}</td>
-                                <td>{{ $student->nama_ayah }}</td>
+                                <td>{{ $student->alamat_siswa }}</td>
+                                <td>{{ $student->minat_jurusan }}</td>
                             </tr>
                         @endforeach
                     </tbody>
