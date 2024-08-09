@@ -18,6 +18,8 @@
                             <th>Asal Sekolah</th>
                             <th>Alamat</th>
                             <th>Minat Jurusan</th>
+                            <th></th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -31,6 +33,18 @@
                                 <td>{{ $student->nama_asal_sekolah }}</td>
                                 <td>{{ $student->alamat_siswa }}</td>
                                 <td>{{ $student->minat_jurusan }}</td>
+
+                                <td><a href="#" class="btn btn-warning"
+                                        onclick="return confirm('Apakah Anda yakin ingin mengubah data user ini?');">Edit</a>
+                                </td>
+                                <td>
+                                    <form action="#" method="POST"
+                                        onsubmit="return confirm('Apakah Anda yakin ingin menghapus data user ini?');">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                    </form>
+                                </td>
                             </tr>
                         @endforeach
                     </tbody>
