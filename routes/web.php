@@ -31,4 +31,5 @@ Route::post('/logout', function () {
 })->name('logout');
 
 Route::resource('users', App\Http\Controllers\UserController::class);
+Route::resource('students', App\Http\Controllers\StudentController::class);
 Route::resource('roles', App\Http\Controllers\RoleController::class);

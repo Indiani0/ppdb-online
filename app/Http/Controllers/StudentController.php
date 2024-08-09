@@ -27,4 +27,12 @@ class StudentController extends Controller
         $students = Student::all(); // Mengambil semua data dari tabel students
         return view('student', compact('students'));
     }
+
+    public function destroy($id)
+    {
+        $student = Student::findOrFail($id);
+        $student->delete();
+
+        return redirect()->route('students.index')->with('success', 'Data siswa berhasil dihapus.');
+    }
 }

@@ -7,6 +7,12 @@
                 <h1>Selamat Datang di halaman Peserta Didik</h1>
                 <p>Halaman ini berisi data calon siswa yang telah melakukan pendaftaran PPDB</p>
 
+                @if (session('success'))
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                @endif
+
                 <table class="table">
                     <thead>
                         <tr>
@@ -38,7 +44,7 @@
                                         onclick="return confirm('Apakah Anda yakin ingin mengubah data user ini?');">Edit</a>
                                 </td>
                                 <td>
-                                    <form action="#" method="POST"
+                                    <form action="{{ route('students.destroy', $student->id) }}" method="POST"
                                         onsubmit="return confirm('Apakah Anda yakin ingin menghapus data user ini?');">
                                         @csrf
                                         @method('DELETE')
