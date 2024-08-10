@@ -65,11 +65,11 @@
                     <div class="form-group">
                         <label for="agama">Agama</label>
                         <select class="form-control" id="agama" name="agama" required>
-                            <option value="Laki-Laki" {{ $student->agama == 'Islam' ? 'selected' : '' }}>Islam</option>
-                            <option value="Perempuan" {{ $student->agama == 'Katholik' ? 'selected' : '' }}>Katholik
+                            <option value="Islam" {{ $student->agama == 'Islam' ? 'selected' : '' }}>Islam</option>
+                            <option value="Katholik" {{ $student->agama == 'Katholik' ? 'selected' : '' }}>Katholik
                             </option>
-                            <option value="Perempuan" {{ $student->agama == 'Buddha' ? 'selected' : '' }}>Buddha</option>
-                            <option value="Perempuan" {{ $student->agama == 'Hindu' ? 'selected' : '' }}>Hindu</option>
+                            <option value="Buddha" {{ $student->agama == 'Buddha' ? 'selected' : '' }}>Buddha</option>
+                            <option value="Hindu" {{ $student->agama == 'Hindu' ? 'selected' : '' }}>Hindu</option>
                         </select>
                     </div>
 
