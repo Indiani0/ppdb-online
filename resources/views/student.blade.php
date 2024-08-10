@@ -40,12 +40,12 @@
                                 <td>{{ $student->alamat_siswa }}</td>
                                 <td>{{ $student->minat_jurusan }}</td>
 
-                                <td><a href="#" class="btn btn-warning"
-                                        onclick="return confirm('Apakah Anda yakin ingin mengubah data user ini?');">Edit</a>
+                                <td><a href="{{ route('students.edit', $student->id) }}" class="btn btn-warning"
+                                        onclick="return confirm('Apakah Anda yakin ingin mengubah data siswa ini?');">Edit</a>
                                 </td>
                                 <td>
                                     <form action="{{ route('students.destroy', $student->id) }}" method="POST"
-                                        onsubmit="return confirm('Apakah Anda yakin ingin menghapus data user ini?');">
+                                        onsubmit="return confirm('Apakah Anda yakin ingin menghapus data siswa ini?');">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">Delete</button>

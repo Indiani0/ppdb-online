@@ -28,6 +28,12 @@ class StudentController extends Controller
         return view('student', compact('students'));
     }
 
+    public function edit($id)
+    {
+        $student = Student::find($id);
+        return view('students.edit', compact('student'));
+    }
+
     public function destroy($id)
     {
         $student = Student::findOrFail($id);
