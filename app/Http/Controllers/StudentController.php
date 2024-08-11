@@ -171,7 +171,7 @@ class StudentController extends Controller
         if ($user->role_id === 1 || $user->role_id === 2) {
             return redirect()->route('students.index')->with('success', 'Data siswa berhasil ditambahkan!');
         } elseif ($user->role_id === 3) {
-            $whatsappUrl = 'https://api.whatsapp.com/send?phone=6281324768641&text=Konfirmasi%20Pendaftaran%20dengan%20Upload%20Dokumen%20Pendukung%20Disini:%0AScan_KK%0AScan_Akta_Lahir%0AScan_KTP_Wali%0AScan_Surat_Lulus';
+            $whatsappUrl = env('WHATSAPP_NUMBER');
             return redirect()->back()->with([
                 'success' => 'Data siswa berhasil dikirim!',
                 'whatsappUrl' => $whatsappUrl,
