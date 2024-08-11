@@ -240,12 +240,14 @@
 
 
                         {{-- Submit Form --}}
-                        <tr>
-                            <td><br>
-                                <button type="submit" name="submit">Kirim</button>
-                                <input type="reset" name="reset" value="Reset Formulir">
-                            </td>
-                        </tr>
+                        @if (Auth::user()->role_id === 3)
+                            <tr>
+                                <td><br>
+                                    <button type="submit" name="submit">Kirim</button>
+                                    <input type="reset" name="reset" value="Reset Formulir">
+                                </td>
+                            </tr>
+                        @endif
                     </table>
                 </form>
             </div>
