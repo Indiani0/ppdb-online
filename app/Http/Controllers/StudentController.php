@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Student;
-use Twilio\Rest\Client;
 use Barryvdh\DomPDF\PDF;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -176,7 +175,6 @@ class StudentController extends Controller
                 'success' => 'Data siswa berhasil dikirim!',
                 'whatsappUrl' => $whatsappUrl,
             ]);
-            return redirect()->back()->with('success', 'Data siswa berhasil dikirim!');
         } else {
             return redirect()->route('home')->with('success', 'Data siswa berhasil dikirim!');
         }
