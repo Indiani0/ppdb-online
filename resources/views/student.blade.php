@@ -56,7 +56,6 @@
                                 <td>{{ $student->alamat_siswa }}</td>
                                 <td>{{ $student->minat_jurusan }}</td>
                                 <td>
-                                    {{-- {{ $student->foto_siswa }} --}}
                                     @if ($student->foto_siswa)
                                         <img src="{{ asset('storage/' . $student->foto_siswa) }}"
                                             alt="Foto {{ $student->nama_siswa }}" style="width: 80px; height: auto;">
