@@ -22,7 +22,7 @@
                     </div>
                 @endif
 
-                <form action="{{ route('students.store') }}" method="POST">
+                <form action="{{ route('students.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
 
                     <br>
@@ -208,6 +208,11 @@
                                 {{ old('minat_jurusan') == 'Layanan Perbankan Syariah' ? 'selected' : '' }}>Layanan
                                 Perbankan Syariah</option>
                         </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="foto_siswa" class="form-label">Foto Siswa</label>
+                        <input type="file" class="form-control" id="foto_siswa" name="foto_siswa" required>
                     </div>
 
                     <button type="submit" class="btn btn-primary">Simpan</button>

@@ -73,7 +73,7 @@ class StudentController extends Controller
             'nilai_bhs_inggris' => 'required|numeric',
             'nilai_bhs_indo' => 'required|numeric',
             'minat_jurusan' => 'required|string',
-            'foto_siswa' => 'nullable|string',
+            'foto_siswa' => 'nullable|file|mimes:jpg,jpeg,png|max:2048',
         ]);
 
         // Identitas Calon Siswa
@@ -110,6 +110,10 @@ class StudentController extends Controller
         $student->nilai_bhs_indo = $request->nilai_bhs_indo;
         $student->minat_jurusan = $request->minat_jurusan;
         $student->foto_siswa = $request->foto_siswa;
+
+        if ($request->hasFile('foto_siswa')) {
+            $student->foto_siswa = $request->file('foto_siswa')->store('uploads', 'public');
+        }
 
         $student->save();
 

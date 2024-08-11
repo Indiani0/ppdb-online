@@ -16,7 +16,7 @@
                     </div>
                 @endif
 
-                <form action="{{ route('students.update', $student->id) }}" method="POST">
+                <form action="{{ route('students.update', $student->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
 
@@ -207,8 +207,7 @@
 
                     <div class="form-group">
                         <label for="foto_siswa">Foto Siswa</label>
-                        <input type="file" class="form-control" id="foto_siswa" name="foto_siswa"
-                            value="{{ $student->foto_siswa }}" required>
+                        <input type="file" class="form-control" id="foto_siswa" name="foto_siswa">
                     </div>
 
                     <button type="submit" class="btn btn-primary">Update</button>
