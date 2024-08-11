@@ -170,7 +170,7 @@ class StudentController extends Controller
         if ($user->role_id === 1 || $user->role_id === 2) {
             return redirect()->route('students.index')->with('success', 'Data siswa berhasil ditambahkan!');
         } elseif ($user->role_id === 3) {
-            $whatsappUrl = env('WHATSAPP_NUMBER', 'default_value');
+            $whatsappUrl = env('WHATSAPP_NUMBER');
             return redirect()->back()->with([
                 'success' => 'Data siswa berhasil dikirim!',
                 'whatsappUrl' => $whatsappUrl,
