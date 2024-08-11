@@ -45,10 +45,10 @@ class StudentFactory extends Factory
             'alamat_ibu' => fake()->address(),
 
             // Data Pendukung
-            'nilai_mtk' => fake()->randomFloat(1, 20, 30),
-            'nilai_ipa' => fake()->randomFloat(1, 20, 30),
-            'nilai_bhs_inggris' => fake()->randomFloat(1, 20, 30),
-            'nilai_bhs_indo' => fake()->randomFloat(1, 20, 30),
+            'nilai_mtk' => fake()->numberBetween(0, 100),
+            'nilai_ipa' => fake()->numberBetween(0, 100),
+            'nilai_bhs_inggris' => fake()->numberBetween(0, 100),
+            'nilai_bhs_indo' => fake()->numberBetween(0, 100),
             'minat_jurusan' => fake()->randomElement(['Teknik Pembuatan Kain', 'Teknik Elektro Industri', 'Layanan Perbankan Syariah']),
 
         ];
