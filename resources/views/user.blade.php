@@ -5,6 +5,7 @@
         <div class="card">
             <div class="card-body">
                 <h1>Selamat Datang di Halaman Data User</h1>
+                <p>Halaman ini berisi data akun calon siswa</p>
 
                 @if (session('success'))
                     <div class="alert alert-success">
