@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Student;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class StudentController extends Controller
 {
@@ -154,7 +155,16 @@ class StudentController extends Controller
 
         // Simpan data ke database
         Student::create($validated);
-        return redirect()->back()->with('success', 'Data siswa berhasil dikirim!');
+
+        $user = Auth::user();
+
+        if ($user->role_id === 1 || $user->role_id === 2) {
+            return redirect()->route('students.index')->with('success', 'Data siswa berhasil ditambahkan!');
+        } elseif ($user->role_id === 3) {
+            return redirect()->back()->with('success', 'Data siswa berhasil dikirim!');
+        } else {
+            return redirect()->route('home')->with('success', 'Data siswa berhasil dikirim!');
+        }
     }
 
     public function destroy($id)
