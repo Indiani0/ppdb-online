@@ -22,6 +22,7 @@ Route::get('/beranda', [App\Http\Controllers\DashboardController::class, 'index'
 Route::get('/form', [App\Http\Controllers\FormController::class, 'index'])->name('form');
 Route::get('/student', [App\Http\Controllers\StudentController::class, 'index'])->name('student');
 Route::get('/users/create', [App\Http\Controllers\UserController::class, 'create'])->name('users.create');
+Route::get('/students/pdf', [App\Http\Controllers\StudentController::class, 'generatePDF'])->name('students.pdf');
 
 Route::post('/users', [App\Http\Controllers\UserController::class, 'store'])->name('users.store');
 Route::post('/student', [App\Http\Controllers\FormController::class, 'store'])->name('students.store');

@@ -25,6 +25,7 @@
 
                 <div class="mb-3">
                     <a href="{{ route('students.create') }}" class="btn btn-primary">Tambah Data Calon Siswa</a>
+                    <a href="{{ route('students.pdf') }}" class="btn btn-secondary">Cetak Laporan PDF</a>
                 </div>
 
                 <table class="table">

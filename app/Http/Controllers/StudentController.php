@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Student;
+use Barryvdh\DomPDF\PDF;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -181,5 +182,14 @@ class StudentController extends Controller
         $student->delete();
 
         return redirect()->route('students.index')->with('success', 'Data siswa berhasil dihapus.');
+    }
+
+    public function generatePDF(PDF $pdf)
+    {
+        $students = Student::all();
+
+        $pdf = $pdf->loadView('students.pdf', compact('students'));
+
+        return $pdf->download('laporan-siswa.pdf');
     }
 }
