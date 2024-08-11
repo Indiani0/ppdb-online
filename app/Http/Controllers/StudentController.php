@@ -28,6 +28,12 @@ class StudentController extends Controller
         return view('student', compact('students'));
     }
 
+    public function create()
+    {
+        $students = Student::all();
+        return view('students.create', compact('students'));
+    }
+
     public function edit($id)
     {
         $student = Student::find($id);
@@ -148,8 +154,7 @@ class StudentController extends Controller
 
         // Simpan data ke database
         Student::create($validated);
-
-        return redirect()->back()->with('success', 'Data berhasil dikirim!');
+        return redirect()->back()->with('success', 'Data siswa berhasil dikirim!');
     }
 
     public function destroy($id)

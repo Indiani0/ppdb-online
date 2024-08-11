@@ -13,6 +13,20 @@
                     </div>
                 @endif
 
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
+                <div class="mb-3">
+                    <a href="{{ route('students.create') }}" class="btn btn-primary">Tambah Data Calon Siswa</a>
+                </div>
+
                 <table class="table">
                     <thead>
                         <tr>
@@ -28,6 +42,7 @@
                             <th></th>
                         </tr>
                     </thead>
+
                     <tbody>
                         @foreach ($students as $index => $student)
                             <tr>
