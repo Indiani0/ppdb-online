@@ -208,6 +208,8 @@
                     <div class="form-group">
                         <label for="foto_siswa">Foto Siswa</label>
                         <input type="file" class="form-control" id="foto_siswa" name="foto_siswa">
+                        <small class="form-text text-muted">Tidak perlu diisi jika foto masih sama dengan data
+                            sebelumnya.</small>
                     </div>
 
                     <button type="submit" class="btn btn-primary">Update</button>
