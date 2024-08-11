@@ -17,14 +17,16 @@
         <li class="sidebar-title">User Management</li>
         <li class="sidebar-item">
             <a href="{{ route('home') }}" class='sidebar-link'>
-                <span>Dashboard Admin</span>
+                <span>Dashboard {{ ucwords(Auth::user()->name) }}</span>
             </a>
         </li>
-        <li class="sidebar-item">
-            <a href="{{ route('users.index') }}" class='sidebar-link'>
-                <span>Data User</span>
-            </a>
-        </li>
+        @if (Auth::user()->role_id === 1)
+            <li class="sidebar-item">
+                <a href="{{ route('users.index') }}" class='sidebar-link'>
+                    <span>Data User</span>
+                </a>
+            </li>
+        @endif
 
         {{-- Data Calon Siswa & Data Klasifikasi --}}
         <li class="sidebar-title">Master Data</li>

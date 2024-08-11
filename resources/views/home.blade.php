@@ -5,7 +5,7 @@
         <div class="card">
             <div class="card-body">
                 <h1 class="text-primary">Hello {{ ucwords(Auth::user()->name) }}</h1>
-                <p>Selamat Datang di menu admin, silahkan eksplorasi menu yang tersedia!</p>
+                <p>Selamat Datang di menu {{ ucwords(Auth::user()->name) }}, silahkan eksplorasi menu yang tersedia!</p>
             </div>
         </div>
     </div>
