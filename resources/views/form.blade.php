@@ -29,10 +29,10 @@
                     <div class="alert alert-success">
                         {{ session('success') }}
 
-                        @if (session('whatsappUrl'))
+                        {{-- @if (session('whatsappUrl'))
                             <a href="{{ session('whatsappUrl') }}" class="btn btn-success" target="_blank">Upload
                                 Dokumen Pendukung Disini</a>
-                        @endif
+                        @endif --}}
                     </div>
                 @endif
 
