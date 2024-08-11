@@ -66,13 +66,6 @@ class StudentController extends Controller
             'nilai_bhs_inggris' => 'required|numeric',
             'nilai_bhs_indo' => 'required|numeric',
             'minat_jurusan' => 'required|string',
-
-            // Dokumen Pendukung
-            'scan_kk' => 'nullable|string',
-            'scan_akta' => 'nullable|string',
-            'scan_ktp_wali' => 'nullable|string',
-            'foto_siswa' => 'nullable|string',
-            'scan_surat_lulus' => 'nullable|string',
         ]);
 
         // Identitas Calon Siswa
@@ -109,12 +102,6 @@ class StudentController extends Controller
         $student->nilai_bhs_indo = $request->nilai_bhs_indo;
         $student->minat_jurusan = $request->minat_jurusan;
 
-        // Dokumen Pendukung
-        $student->scan_kk = $request->scan_kk;
-        $student->scan_akta = $request->scan_akta;
-        $student->scan_ktp_wali = $request->scan_ktp_wali;
-        $student->foto_siswa = $request->foto_siswa;
-        $student->scan_surat_lulus = $request->scan_surat_lulus;
         $student->save();
 
         return redirect()->route('students.index')->with('success', 'Data siswa berhasil diperbarui');
@@ -157,19 +144,7 @@ class StudentController extends Controller
             'nilai_bhs_indo' => 'required|numeric',
             'minat_jurusan' => 'required|string',
 
-            // Dokumen Pendukung
-            'scan_kk' => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048',
-            'scan_akta' => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048',
-            'scan_ktp_wali' => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048',
-            'foto_siswa' => 'required|file|mimes:jpg,jpeg,png|max:2048',
-            'scan_surat_lulus' => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048',
         ]);
-
-        $validated['scan_kk'] = $request->file('scan_kk')->store('uploads', 'public');
-        $validated['scan_akta'] = $request->file('scan_akta')->store('uploads', 'public');
-        $validated['scan_ktp_wali'] = $request->file('scan_ktp_wali')->store('uploads', 'public');
-        $validated['foto_siswa'] = $request->file('foto_siswa')->store('uploads', 'public');
-        $validated['scan_surat_lulus'] = $request->file('scan_surat_lulus')->store('uploads', 'public');
 
         // Simpan data ke database
         Student::create($validated);

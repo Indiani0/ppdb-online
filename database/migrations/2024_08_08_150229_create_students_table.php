@@ -43,12 +43,6 @@ return new class extends Migration
             $table->float('nilai_bhs_indo');
             $table->string('minat_jurusan');
 
-            // Dokumen Pendukung
-            $table->string('scan_kk')->nullable();
-            $table->string('scan_akta')->nullable();
-            $table->string('scan_ktp_wali')->nullable();
-            $table->string('foto_siswa')->nullable();
-            $table->string('scan_surat_lulus')->nullable();
             $table->timestamps();
         });
     }

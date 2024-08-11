@@ -233,37 +233,6 @@
                         </tr>
 
 
-                        {{-- Dokumen Pendukung --}}
-                        <tr>
-                            <th><br>V. UPLOAD DOKUMEN PENDUKUNG</th>
-                        </tr>
-
-                        <tr>
-                            <td><label for="scan_kk">Kartu Keluarga</label></td>
-                            <td>: <input type="file" name="scan_kk" id="scan_kk" required></td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="scan_akta">Akta Kelahiran</label></td>
-                            <td>: <input type="file" name="scan_akta" id="scan_akta" required></td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="scan_ktp_wali">KTP Orang Tua / Wali</label></td>
-                            <td>: <input type="file" name="scan_ktp_wali" id="scan_ktp_wali" required></td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="foto_siswa">Foto Siswa - Background Merah</label></td>
-                            <td>: <input type="file" name="foto_siswa" id="foto_siswa" required></td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="scan_surat_lulus">Surat Keterangan Lulus / Ijazah / SKHUN</label></td>
-                            <td>: <input type="file" name="scan_surat_lulus" id="scan_surat_lulus" required></td>
-                        </tr>
-
-
                         {{-- Submit Form --}}
                         <tr>
                             <td><br>

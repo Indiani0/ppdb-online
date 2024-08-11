@@ -205,40 +205,6 @@
                         </select>
                     </div>
 
-                    <br>
-
-                    {{-- Dokumen Pendukung --}}
-                    <p>V. UPLOAD DOKUMEN PENDUKUNG</p>
-                    <div class="form-group">
-                        <label for="scan_kk">Kartu Keluarga</label>
-                        <input type="file" class="form-control" id="scan_kk" name="scan_kk"
-                            value="{{ $student->scan_kk }}" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="scan_akta">Akta Kelahiran</label>
-                        <input type="file" class="form-control" id="scan_akta" name="scan_akta"
-                            value="{{ $student->scan_akta }}" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="scan_ktp_wali">KTP Orang Tua / Wali</label>
-                        <input type="file" class="form-control" id="scan_ktp_wali" name="scan_ktp_wali"
-                            value="{{ $student->scan_ktp_wali }}" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="foto_siswa">Foto Siswa - Background Merah</label>
-                        <input type="file" class="form-control" id="foto_siswa" name="foto_siswa"
-                            value="{{ $student->foto_siswa }}" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="scan_surat_lulus">Surat Keterangan Lulus / Ijazah / SKHUN</label>
-                        <input type="file" class="form-control" id="scan_surat_lulus" name="scan_surat_lulus"
-                            value="{{ $student->scan_surat_lulus }}" required>
-                    </div>
-
                     <button type="submit" class="btn btn-primary">Update</button>
                 </form>
             </div>
