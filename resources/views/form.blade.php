@@ -68,8 +68,8 @@
                             <td><label for="jenis_kelamin">Jenis Kelamin</label></td>
                             <td>:
                                 <select name="jenis_kelamin" id="jenis_kelamin">
-                                    <option>Prempuan</option>
-                                    <option>Laki-Laki</option>
+                                    <option>P</option>
+                                    <option>L</option>
                                 </select>
                             </td>
                         </tr>

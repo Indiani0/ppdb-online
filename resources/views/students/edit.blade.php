@@ -45,8 +45,8 @@
                     <div class="form-group">
                         <label for="jenis_kelamin">Jenis Kelamin</label>
                         <select class="form-control" id="jenis_kelamin" name="jenis_kelamin" required>
-                            <option value="Laki-Laki" {{ $student->jenis_kelamin == 'L' ? 'selected' : '' }}>L</option>
-                            <option value="Perempuan" {{ $student->jenis_kelamin == 'P' ? 'selected' : '' }}>P</option>
+                            <option value="L" {{ $student->jenis_kelamin == 'L' ? 'selected' : '' }}>L</option>
+                            <option value="P" {{ $student->jenis_kelamin == 'P' ? 'selected' : '' }}>P</option>
                         </select>
                     </div>
 
@@ -192,14 +192,14 @@
                     <div class="form-group">
                         <label for="minat_jurusan">Minat Jurusan</label>
                         <select class="form-control" id="minat_jurusan" name="minat_jurusan" required>
-                            <option value="Laki-Laki"
+                            <option value="Teknik Pembuatan Kain"
                                 {{ $student->minat_jurusan == 'Teknik Pembuatan Kain' ? 'selected' : '' }}>Teknik Pembuatan
                                 Kain</option>
-                            <option value="Perempuan"
+                            <option value="Teknik Elektro Industri"
                                 {{ $student->minat_jurusan == 'Teknik Elektro Industri' ? 'selected' : '' }}>Teknik Elektro
                                 Industri
                             </option>
-                            <option value="Perempuan"
+                            <option value="Layanan Perbankan Syariah"
                                 {{ $student->minat_jurusan == 'Layanan Perbankan Syariah' ? 'selected' : '' }}>Layanan
                                 Perbankan Syariah</option>
                         </select>
