@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Student;
+use Twilio\Rest\Client;
 use Barryvdh\DomPDF\PDF;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -170,7 +171,11 @@ class StudentController extends Controller
         if ($user->role_id === 1 || $user->role_id === 2) {
             return redirect()->route('students.index')->with('success', 'Data siswa berhasil ditambahkan!');
         } elseif ($user->role_id === 3) {
-            return redirect()->back()->with('success', 'Data siswa berhasil dikirim!');
+            $whatsappUrl = 'https://api.whatsapp.com/send?phone=6281324768641&text=Konfirmasi%20Pendaftaran%20dengan%20Upload%20Dokumen%20Pendukung%20Disini:%0AScan_KK%0AScan_Akta_Lahir%0AScan_KTP_Wali%0AScan_Surat_Lulus';
+            return redirect()->back()->with([
+                'success' => 'Data siswa berhasil dikirim!',
+                'whatsappUrl' => $whatsappUrl,
+            ]);
         } else {
             return redirect()->route('home')->with('success', 'Data siswa berhasil dikirim!');
         }
