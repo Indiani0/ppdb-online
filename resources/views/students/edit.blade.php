@@ -205,6 +205,12 @@
                         </select>
                     </div>
 
+                    <div class="form-group">
+                        <label for="foto_siswa">Foto Siswa</label>
+                        <input type="file" class="form-control" id="foto_siswa" name="foto_siswa"
+                            value="{{ $student->foto_siswa }}" required>
+                    </div>
+
                     <button type="submit" class="btn btn-primary">Update</button>
                 </form>
             </div>

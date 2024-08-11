@@ -38,6 +38,7 @@
                             <th>Asal Sekolah</th>
                             <th>Alamat</th>
                             <th>Minat Jurusan</th>
+                            <th>Foto Siswa</th>
                             <th></th>
                             <th></th>
                         </tr>
@@ -54,6 +55,15 @@
                                 <td>{{ $student->nama_asal_sekolah }}</td>
                                 <td>{{ $student->alamat_siswa }}</td>
                                 <td>{{ $student->minat_jurusan }}</td>
+                                <td>
+                                    {{-- {{ $student->foto_siswa }} --}}
+                                    @if ($student->foto_siswa)
+                                        <img src="{{ asset('storage/' . $student->foto_siswa) }}"
+                                            alt="Foto {{ $student->nama_siswa }}" style="width: 80px; height: auto;">
+                                    @else
+                                        Tidak ada foto
+                                    @endif
+                                </td>
 
                                 <td><a href="{{ route('students.edit', $student->id) }}" class="btn btn-warning"
                                         onclick="return confirm('Apakah Anda yakin ingin mengubah data siswa ini?');">Edit</a>

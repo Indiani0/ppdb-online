@@ -232,6 +232,12 @@
                             </td>
                         </tr>
 
+                        <tr>
+                            <td><label for="foto_siswa">Foto Siswa - Background Merah</label></td>
+                            <td>: <input type="file" id="foto_siswa" name="foto_siswa" required>
+                            </td>
+                        </tr>
+
 
                         {{-- Submit Form --}}
                         <tr>

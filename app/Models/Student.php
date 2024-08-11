@@ -42,12 +42,6 @@ class Student extends Model
         'nilai_bhs_inggris',
         'nilai_bhs_indo',
         'minat_jurusan',
-
-        // Dokumen Pendukung
-        'scan_kk',
-        'scan_akta',
-        'scan_ktp_wali',
         'foto_siswa',
-        'scan_surat_lulus',
     ];
 }

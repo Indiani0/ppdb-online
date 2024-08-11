@@ -50,6 +50,7 @@ class StudentFactory extends Factory
             'nilai_bhs_inggris' => fake()->numberBetween(0, 100),
             'nilai_bhs_indo' => fake()->numberBetween(0, 100),
             'minat_jurusan' => fake()->randomElement(['Teknik Pembuatan Kain', 'Teknik Elektro Industri', 'Layanan Perbankan Syariah']),
+            'foto_siswa' => fake()->imageUrl(640, 480, 'animals', true),
 
         ];
     }

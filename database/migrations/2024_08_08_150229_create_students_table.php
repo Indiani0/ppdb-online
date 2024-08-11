@@ -42,6 +42,7 @@ return new class extends Migration
             $table->float('nilai_bhs_inggris');
             $table->float('nilai_bhs_indo');
             $table->string('minat_jurusan');
+            $table->string('foto_siswa')->nullable();
 
             $table->timestamps();
         });
