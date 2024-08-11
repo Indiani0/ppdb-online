@@ -36,7 +36,7 @@
             </a>
         </li>
         <li class="sidebar-item">
-            <a href="#" class='sidebar-link'>
+            <a href="{{ route('classification') }}" class='sidebar-link'>
                 <span>Klasifikasi C4.5</span>
             </a>
         </li>
