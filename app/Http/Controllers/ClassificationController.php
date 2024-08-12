@@ -28,34 +28,84 @@ class ClassificationController extends Controller
      */
     public function index()
     {
-        // return view('classification');
+        $c45 = new C45();
+        $input = new C45\DataInput;
 
-        // Ambil data dari database
-        $data = Student::all();
+        // Data set ini nanti nya bisa diubah menjadi hasil query dari database
+        $data = array(
+            array(
+                "MTK" => 4,
+                "IPA" => 5,
+                "INDO" => 5,
+                "RESULT" => "No"
+            ),
+            array(
+                "MTK" => 8,
+                "IPA" => 8,
+                "INDO" => 9,
+                "RESULT" => "Yes"
+            ),
+            array(
+                "MTK" => 9,
+                "IPA" => 8,
+                "INDO" => 9,
+                "RESULT" => "Yes"
+            ),
+            array(
+                "MTK" => 9,
+                "IPA" => 9,
+                "INDO" => 9,
+                "RESULT" => "Yes"
+            ),
+            array(
+                "MTK" => 6,
+                "IPA" => 8,
+                "INDO" => 9,
+                "RESULT" => "Yes"
+            ),
+            array(
+                "MTK" => 5,
+                "IPA" => 4,
+                "INDO" => 4,
+                "RESULT" => "No"
+            ),
+            array(
+                "MTK" => 5,
+                "IPA" => 3,
+                "INDO" => 4,
+                "RESULT" => "No"
+            ),
+        );
 
-        // Konversi data ke format yang sesuai dengan C4.5
-        $c45Data = $data->toArray();
+        // Initialize Data
+        $input->setData($data); // Set data from array
+        $input->setAttributes(array('MTK', 'IPA', 'INDO', 'RESULT')); // Set attributes of data
 
-        // Inisialisasi C4.5
-        $c45 = new C45($c45Data, ['attribute1', 'attribute2'], 'class');
-        $tree = $c45->buildTree();
+        // Initialize C4.5
+        $c45->c45 = $input; // Set input data
+        $c45->setTargetAttribute('RESULT'); // Set target attribute
+        $initialize = $c45->initialize(); // initialize
+
+        // Build Output
+        $buildTree = $initialize->buildTree(); // Build tree
+        $arrayTree = $buildTree->toArray(); // Set to array
+        $stringTree = $buildTree->toString(); // Set to string
+
+        $new_data = array(
+            'MTK' => 9,
+            'IPA' => 8,
+            'INDO' => 8
+        );
+        $classification = $c45->initialize()->buildTree()->classify($new_data);
 
 
-        // Tentukan atribut target dan atribut lainnya
-        $targetAttribute = 'status_kelulusan';
-        $attributes = ['nilai_mtk', 'nilai_ipa', 'jenis_kelamin'];
+        // Print result on terminal, too lazy to create a view :)
+        echo "<script>console.log(`buildTree Result: " . $stringTree . "`);</script>";
+        echo "<script>console.log('Classification Result: " . $classification . "' );</script>";
 
-        // Bangun pohon keputusan
-        $tree = $c45->buildTree($targetAttribute, $attributes);
+        // Buat view classification untuk menampilkan hasil klasifikasi,
+        // return view('classification.result', ['classification' => $classification]);
 
-        // Lakukan klasifikasi pada data baru
-        $newData = [
-            'nilai_mtk' => 80,
-            'nilai_mtk' => 87,
-            'jenis_kelamin' => 'Laki-laki',
-        ];
-        $classification = $c45->classify($tree, $newData);
-
-        return view('classification.result', ['classification' => $classification]);
+        return view('beranda');
     }
 }
