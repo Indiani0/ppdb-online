@@ -16,6 +16,10 @@ return new class extends Migration
             $table->string('attribute1');
             $table->string('attribute2');
             $table->string('class');
+
+            $table->unsignedBigInteger('student_id');
+            $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
+            $table->string('result');
             $table->timestamps();
         });
     }

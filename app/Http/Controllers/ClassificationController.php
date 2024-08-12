@@ -3,11 +3,7 @@
 namespace App\Http\Controllers;
 
 use Algorithm\C45;
-use App\Models\Student;
-use Illuminate\Http\Request;
 use App\Models\Classification;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 class ClassificationController extends Controller
 {
@@ -100,12 +96,16 @@ class ClassificationController extends Controller
 
 
         // Print result on terminal, too lazy to create a view :)
-        echo "<script>console.log(`buildTree Result: " . $stringTree . "`);</script>";
-        echo "<script>console.log('Classification Result: " . $classification . "' );</script>";
+        // echo "<script>console.log(`buildTree Result: " . $stringTree . "`);</script>";
+        // echo "<script>console.log('Classification Result: " . $classification . "' );</script>";
 
-        // Buat view classification untuk menampilkan hasil klasifikasi,
-        // return view('classification.result', ['classification' => $classification]);
+        $classifications = Classification::with('student')->get();
 
-        return view('beranda');
+        return view('classification', [
+            'classifications' => $classifications,
+            'classification' => $classification,
+            'arrayTree' => $arrayTree,
+            'stringTree' => $stringTree,
+        ]);
     }
 }

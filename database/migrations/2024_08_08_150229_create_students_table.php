@@ -11,7 +11,8 @@ return new class extends Migration
         Schema::create('students', function (Blueprint $table) {
             // Identitas Calon Siswa
             $table->id();
-            $table->string('nik');
+            $table->unsignedBigInteger('nik');
+            // $table->string('nik');
             $table->string('nisn');
             $table->string('nama_siswa');
             $table->string('jenis_kelamin');
