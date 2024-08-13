@@ -10,6 +10,11 @@ class Classification extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'result',
+        'student_id',
+    ];
+
     public function student(): BelongsTo
     {
         return $this->belongsTo(Student::class);

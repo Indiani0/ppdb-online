@@ -2,7 +2,10 @@
 
 namespace Database\Seeders;
 
+use App\Http\Controllers\ClassificationController;
+use App\Models\Classification;
 use App\Models\Role;
+use App\Models\Student;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -35,5 +38,18 @@ class DatabaseSeeder extends Seeder
             "password" => bcrypt("panitia123"),
             "role_id" => 2
         ]);
+
+        for ($i = 0; $i < 50; $i++) {
+            $student = Student::factory()->create();
+
+            $controller = app(ClassificationController::class);
+
+            $res = $controller->getClassification($student, true);
+
+            Classification::create([
+                "student_id" => $student->id,
+                "result" => $res
+            ]);
+        }
     }
 }
