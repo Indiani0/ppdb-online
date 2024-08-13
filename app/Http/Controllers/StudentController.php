@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Classification;
 use App\Models\Student;
 use Barryvdh\DomPDF\PDF;
 use Illuminate\Http\Request;
@@ -163,7 +164,16 @@ class StudentController extends Controller
         $validated['foto_siswa'] = $request->file('foto_siswa')->store('uploads', 'public');
 
         // Simpan data ke database
-        Student::create($validated);
+        $res = Student::create($validated);
+
+        // Classification
+        $classificationController = new ClassificationController();
+        $resClassify = $classificationController->getClassification($res);
+
+        Classification::create([
+            'student_id' => $res->id,
+            'result' => $resClassify,
+        ]);
 
         $user = Auth::user();
 

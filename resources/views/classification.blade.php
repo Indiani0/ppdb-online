@@ -19,35 +19,43 @@
                             <th>Nilai IPA</th>
                             <th>Nilai Bahasa Inggris</th>
                             <th>Nilai Bahasa Indonesia</th>
+                            <th>Hasil Klasifikasi</th>
                         </tr>
                     </thead>
 
                     <tbody>
-                        @foreach ($classifications as $classification)
+                        @if ($classifications->isEmpty())
                             <tr>
-                                <td>{{ $loop->iteration }}</td>
-                                <td>{{ $classification->student->nama_siswa }}</td> <!-- Akses relasi student -->
-                                <td>{{ $classification->student->nilai_mtk }}</td>
-                                <td>{{ $classification->student->nilai_ipa }}</td>
-                                <td>{{ $classification->student->nilai_bhs_inggris }}</td>
-                                <td>{{ $classification->student->nilai_bhs_indo }}</td>
+                                <td colspan="6">Tidak ada data</td>
                             </tr>
-                        @endforeach
+                        @else
+                            @foreach ($classifications as $classification)
+                                <tr>
+                                    <td>{{ $loop->iteration }}</td>
+                                    <td>{{ $classification->student->nama_siswa }}</td> <!-- Akses relasi student -->
+                                    <td>{{ $classification->student->nilai_mtk }}</td>
+                                    <td>{{ $classification->student->nilai_ipa }}</td>
+                                    <td>{{ $classification->student->nilai_bhs_inggris }}</td>
+                                    <td>{{ $classification->student->nilai_bhs_indo }}</td>
+                                    <td>{{ $classification->result }}</td>
+                                </tr>
+                            @endforeach
+                        @endif
                     </tbody>
                 </table>
 
                 <h2>Hasil Klasifikasi</h2>
                 <p>
-                    Pohon Keputusan:
+                    <b>Pohon Keputusan:</b>
                     <br>
-                    <strong>{{ $stringTree }}</strong>
+                    <pre>{{ $stringTree }}</pre>
                 </p>
 
-                <p>
-                    Hasil klasifikasi untuk data baru adalah:
+                {{-- <p>
+                    <b>Hasil klasifikasi untuk data baru adalah:</b>
                     <br>
                     <strong>{{ $classification }}</strong>
-                </p>
+                </p> --}}
 
             </div>
         </div>
