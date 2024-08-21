@@ -21,10 +21,10 @@ class ClassificationController extends Controller
         $this->middleware('auth');
         $this->datasets = array_merge(
             $this->datasets,
-            $this->getDummyDatasets(50, 0, 33),
-            $this->getDummyDatasets(50, 34, 66),
-            $this->getDummyDatasets(50, 67, 100),
-            $this->getDummyDatasets(50, 0, 100)
+            $this->getDummyDatasets(10, 0, 33),
+            $this->getDummyDatasets(10, 34, 66),
+            $this->getDummyDatasets(10, 67, 100),
+            $this->getDummyDatasets(10, 0, 100)
         );
     }
 
