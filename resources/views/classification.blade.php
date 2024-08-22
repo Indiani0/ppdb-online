@@ -51,7 +51,8 @@
                 {{-- <p>
                     <b>Pohon Keputusan:</b>
                     <br>
-                    <pre>{{ $stringTree }}</pre> --}}
+                    <pre>{{ $stringTree }}</pre>
+                </p> --}}
 
                 @foreach ($classifications as $classification)
                     <h4><b>Pohon Keputusan untuk {{ $classification->student->nama_siswa }}</h4><b>
@@ -73,11 +74,11 @@
                                         \App\Http\Controllers\ClassificationController::class,
                                     )->getClassification($student, false);
 
+                                    echo '<br>';
                                     echo $stringTree;
                                 @endphp
                             </pre>
                 @endforeach
-                </p>
             </div>
         </div>
     </div>
