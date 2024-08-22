@@ -27,7 +27,7 @@
                     <tbody>
                         @if ($classifications->isEmpty())
                             <tr>
-                                <td colspan="6">Tidak ada data</td>
+                                <td colspan="6"><b style="color: red">Tidak ada data untuk diklasifikasikan!</b></td>
                             </tr>
                         @else
                             @foreach ($classifications as $classification)
@@ -39,7 +39,7 @@
                                     <td>{{ $classification->student->nilai_bhs_inggris }}</td>
                                     <td>{{ $classification->student->nilai_bhs_indo }}</td>
                                     <td></td>
-                                    <td>{{ $classification->result }}</td>
+                                    <td>{{ $classification->result }} </td>
                                 </tr>
                             @endforeach
                         @endif
@@ -48,15 +48,18 @@
 
                 <br>
                 <h2>Proses Klasifikasi</h2>
-                {{-- <p>
+                <p>
                     <b>Pohon Keputusan:</b>
                     <br>
                     <pre>{{ $stringTree }}</pre>
-                </p> --}}
+                </p>
 
-                @foreach ($classifications as $classification)
-                    <h4><b>Pohon Keputusan untuk {{ $classification->student->nama_siswa }}</h4><b>
-                        <pre>
+                @if ($classifications->isEmpty())
+                    <b style="color: red">Tidak ada data untuk proses klasifikasi!</b>
+                @else
+                    @foreach ($classifications as $classification)
+                        <h4><b>Pohon Keputusan untuk {{ $classification->student->nama_siswa }}</h4><b>
+                            <pre>
                                 @php
                                     // Mengambil data siswa
                                     $student = $classification->student;
@@ -78,7 +81,8 @@
                                     echo $stringTree;
                                 @endphp
                             </pre>
-                @endforeach
+                    @endforeach
+                @endif
             </div>
         </div>
     </div>

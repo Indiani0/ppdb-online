@@ -21,10 +21,10 @@ class ClassificationController extends Controller
         $this->middleware('auth');
         $this->datasets = array_merge(
             $this->datasets,
-            $this->getDummyDatasets(10, 0, 33),
-            $this->getDummyDatasets(10, 34, 66),
-            $this->getDummyDatasets(10, 67, 100),
-            $this->getDummyDatasets(10, 0, 100)
+            $this->getDummyDatasets(50, 0, 33),
+            $this->getDummyDatasets(50, 34, 66),
+            $this->getDummyDatasets(50, 67, 100),
+            $this->getDummyDatasets(50, 0, 100)
         );
     }
 
@@ -40,23 +40,62 @@ class ClassificationController extends Controller
 
         $data = DB::table('students')
             ->join('classifications', 'students.id', '=', 'classifications.student_id')
-            ->select('students.nilai_mtk', 'students.nilai_ipa', 'students.nilai_bhs_inggris', 'students.nilai_bhs_indo', 'classifications.result')
+            ->select(
+                'students.nilai_mtk',
+                'students.nilai_ipa',
+                'students.nilai_bhs_inggris',
+                'students.nilai_bhs_indo',
+                'classifications.result'
+            )
             ->get()
+            ->map(function ($item) {
+                return [
+                    "nilai_mtk" => $item->nilai_mtk,
+                    "nilai_ipa" => $item->nilai_ipa,
+                    "nilai_bhs_inggris" => $item->nilai_bhs_inggris,
+                    "nilai_bhs_indo" => $item->nilai_bhs_indo,
+                    "result" => $item->result ?? 'Tidak Diketahui'
+                ];
+            })
             ->toArray();
 
+        // $data = array(
+        //     array(
+        //         "nilai_mtk" => "80",
+        //         "nilai_ipa" => "70",
+        //         "nilai_bhs_inggris" => "88",
+        //         "nilai_bhs_indo" => "90",
+        //         "result" => "Tidak Lolos"
+        //     ),
+        //     array(
+        //         "nilai_mtk" => "50",
+        //         "nilai_ipa" => "60",
+        //         "nilai_bhs_inggris" => "88",
+        //         "nilai_bhs_indo" => "90",
+        //         "result" => "Lolos"
+        //     ),
+        //     array(
+        //         "nilai_mtk" => "80",
+        //         "nilai_ipa" => "70",
+        //         "nilai_bhs_inggris" => "88",
+        //         "nilai_bhs_indo" => "90",
+        //         "result" => "Lolos"
+        //     ),
+        // );
+
         // Initialize Data
-        $input->setData($data); // Set data from array
-        $input->setAttributes(['nilai_mtk', 'nilai_ipa', 'nilai_bhs_inggris', 'nilai_bhs_indo', 'result']); // Set attributes of data
+        $input->setData($data);
+        $input->setAttributes(['nilai_mtk', 'nilai_ipa', 'nilai_bhs_inggris', 'nilai_bhs_indo', 'result']);
 
         // Initialize C4.5
-        $c45->c45 = $input; // Set input data
-        $c45->setTargetAttribute('result'); // Set target attribute
-        $initialize = $c45->initialize(); // initialize
+        $c45->c45 = $input;
+        $c45->setTargetAttribute('result');
+        $initialize = $c45->initialize();
 
         // Build Output
-        $buildTree = $initialize->buildTree(); // Build tree
-        $arrayTree = $buildTree->toArray(); // Set to array
-        $stringTree = $buildTree->toString(); // Set to string
+        $buildTree = $initialize->buildTree();
+        $arrayTree = $buildTree->toArray();
+        $stringTree = $buildTree->toString();
 
         $classifications = Classification::with('student')->get();
 
