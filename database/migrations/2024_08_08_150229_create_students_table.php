@@ -12,7 +12,6 @@ return new class extends Migration
             // Identitas Calon Siswa
             $table->id();
             $table->unsignedBigInteger('nik');
-            // $table->string('nik');
             $table->string('nisn');
             $table->string('nama_siswa');
             $table->string('jenis_kelamin');
