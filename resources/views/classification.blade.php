@@ -48,11 +48,11 @@
 
                 <br>
                 <h2>Proses Klasifikasi</h2>
-                <p>
+                {{-- <p>
                     <b>Pohon Keputusan:</b>
                     <br>
                     <pre>{{ $stringTree }}</pre>
-                </p>
+                </p> --}}
 
                 @if ($classifications->isEmpty())
                     <b style="color: red">Tidak ada data untuk proses klasifikasi!</b>
