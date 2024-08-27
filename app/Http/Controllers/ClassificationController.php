@@ -22,9 +22,9 @@ class ClassificationController extends Controller
         $this->datasets = array_merge(
             $this->datasets,
             $this->getDummyDatasets(50, 0, 33),
-            $this->getDummyDatasets(50, 34, 66),
-            $this->getDummyDatasets(50, 67, 100),
-            $this->getDummyDatasets(50, 0, 100)
+            $this->getDummyDatasets(70, 34, 66),
+            $this->getDummyDatasets(80, 67, 100),
+            $this->getDummyDatasets(90, 0, 100)
         );
     }
 
@@ -140,7 +140,7 @@ class ClassificationController extends Controller
         return $classification;
     }
 
-    private function getDummyDatasets(int $length, int $min = 0, int $max = 100)
+    private function getDummyDatasets(int $length, int $min = 50, int $max = 100)
     {
         $datasets = [];
 
