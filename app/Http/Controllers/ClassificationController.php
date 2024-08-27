@@ -151,7 +151,7 @@ class ClassificationController extends Controller
             $nilai_bhs_indo = rand($min, $max);
 
             $average = ($nilai_mtk + $nilai_ipa + $nilai_bhs_inggris + $nilai_bhs_indo) / 4;
-            $result = round($average) >= 60 ? "Lolos" : "Tidak Lolos";
+            $result = round($average) >= 30 ? "Lolos" : "Tidak Lolos";
 
             $datasets[] = [
                 "nilai_mtk" => $nilai_mtk,
