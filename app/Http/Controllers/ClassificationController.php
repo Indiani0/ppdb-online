@@ -16,17 +16,35 @@ class ClassificationController extends Controller
      *
      * @return void
      */
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    //     $this->datasets = array_merge(
+    //         $this->datasets,
+    //         $this->getDummyDatasets(50, 0, 33),
+    //         $this->getDummyDatasets(70, 34, 66),
+    //         $this->getDummyDatasets(80, 67, 100),
+    //         $this->getDummyDatasets(90, 0, 100)
+    //     );
+    // }
+
     public function __construct()
     {
         $this->middleware('auth');
+
+        // Menambah variasi data dengan rentang yang lebih kecil dan jumlah yang lebih banyak
         $this->datasets = array_merge(
             $this->datasets,
-            $this->getDummyDatasets(50, 0, 33),
-            $this->getDummyDatasets(70, 34, 66),
-            $this->getDummyDatasets(80, 67, 100),
-            $this->getDummyDatasets(90, 0, 100)
+            $this->getDummyDatasets(100, 30, 40),
+            $this->getDummyDatasets(100, 41, 50),
+            $this->getDummyDatasets(100, 51, 60),
+            $this->getDummyDatasets(100, 61, 70),
+            $this->getDummyDatasets(100, 71, 80),
+            $this->getDummyDatasets(100, 81, 90),
+            $this->getDummyDatasets(100, 91, 100)
         );
     }
+
 
     /**
      * Show the application dashboard.
@@ -140,7 +158,7 @@ class ClassificationController extends Controller
         return $classification;
     }
 
-    private function getDummyDatasets(int $length, int $min = 50, int $max = 100)
+    private function getDummyDatasets(int $length, int $min = 0, int $max = 100)
     {
         $datasets = [];
 
@@ -151,7 +169,7 @@ class ClassificationController extends Controller
             $nilai_bhs_indo = rand($min, $max);
 
             $average = ($nilai_mtk + $nilai_ipa + $nilai_bhs_inggris + $nilai_bhs_indo) / 4;
-            $result = round($average) >= 30 ? "Lolos" : "Tidak Lolos";
+            $result = round($average) >= 60 ? "Lolos" : "Tidak Lolos";
 
             $datasets[] = [
                 "nilai_mtk" => $nilai_mtk,
