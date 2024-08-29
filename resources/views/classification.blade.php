@@ -31,6 +31,12 @@
                             </tr>
                         @else
                             @foreach ($classifications as $classification)
+                                @php
+                                    $student = $classification->student;
+                                    $dominantPercentages = app(
+                                        \App\Http\Controllers\ClassificationController::class,
+                                    )->calculateDominantPercentage($student);
+                                @endphp
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $classification->student->nama_siswa }}</td>
@@ -38,7 +44,11 @@
                                     <td>{{ $classification->student->nilai_ipa }}</td>
                                     <td>{{ $classification->student->nilai_bhs_inggris }}</td>
                                     <td>{{ $classification->student->nilai_bhs_indo }}</td>
-                                    <td></td>
+                                    <td>
+                                        MTK & IPA: {{ number_format($dominantPercentages['persentase_mtk_ipa'], 2) }}%<br>
+                                        Bhs. Inggris & Bhs. Indo:
+                                        {{ number_format($dominantPercentages['persentase_bhs'], 2) }}%
+                                    </td>
                                     <td>{{ $classification->result }} </td>
                                 </tr>
                             @endforeach

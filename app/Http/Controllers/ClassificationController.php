@@ -159,4 +159,22 @@ class ClassificationController extends Controller
 
         return $datasets;
     }
+
+    public function calculateDominantPercentage($student)
+    {
+        // Hitung total nilai
+        $totalMtkIpa = $student->nilai_mtk + $student->nilai_ipa;
+        $totalBhs = $student->nilai_bhs_inggris + $student->nilai_bhs_indo;
+
+        // Hitung persentase dominan
+        $totalAll = $totalMtkIpa + $totalBhs;
+
+        $persentaseMtkIpa = ($totalAll > 0) ? ($totalMtkIpa / $totalAll) * 100 : 0;
+        $persentaseBhs = ($totalAll > 0) ? ($totalBhs / $totalAll) * 100 : 0;
+
+        return [
+            'persentase_mtk_ipa' => $persentaseMtkIpa,
+            'persentase_bhs' => $persentaseBhs,
+        ];
+    }
 }
