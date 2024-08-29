@@ -16,17 +16,6 @@ class ClassificationController extends Controller
      *
      * @return void
      */
-    // public function __construct()
-    // {
-    //     $this->middleware('auth');
-    //     $this->datasets = array_merge(
-    //         $this->datasets,
-    //         $this->getDummyDatasets(50, 0, 33),
-    //         $this->getDummyDatasets(70, 34, 66),
-    //         $this->getDummyDatasets(80, 67, 100),
-    //         $this->getDummyDatasets(90, 0, 100)
-    //     );
-    // }
 
     public function __construct()
     {
@@ -35,13 +24,10 @@ class ClassificationController extends Controller
         // Menambah variasi data dengan rentang yang lebih kecil dan jumlah yang lebih banyak
         $this->datasets = array_merge(
             $this->datasets,
-            $this->getDummyDatasets(100, 30, 40),
-            $this->getDummyDatasets(100, 41, 50),
-            $this->getDummyDatasets(100, 51, 60),
-            $this->getDummyDatasets(100, 61, 70),
-            $this->getDummyDatasets(100, 71, 80),
-            $this->getDummyDatasets(100, 81, 90),
-            $this->getDummyDatasets(100, 91, 100)
+            $this->getDummyDatasets(10, 0, 100),
+            $this->getDummyDatasets(10, 0, 100),
+            $this->getDummyDatasets(10, 0, 100),
+            $this->getDummyDatasets(10, 0, 100)
         );
     }
 
@@ -76,30 +62,6 @@ class ClassificationController extends Controller
                 ];
             })
             ->toArray();
-
-        // $data = array(
-        //     array(
-        //         "nilai_mtk" => "80",
-        //         "nilai_ipa" => "70",
-        //         "nilai_bhs_inggris" => "88",
-        //         "nilai_bhs_indo" => "90",
-        //         "result" => "Tidak Lolos"
-        //     ),
-        //     array(
-        //         "nilai_mtk" => "50",
-        //         "nilai_ipa" => "60",
-        //         "nilai_bhs_inggris" => "88",
-        //         "nilai_bhs_indo" => "90",
-        //         "result" => "Lolos"
-        //     ),
-        //     array(
-        //         "nilai_mtk" => "80",
-        //         "nilai_ipa" => "70",
-        //         "nilai_bhs_inggris" => "88",
-        //         "nilai_bhs_indo" => "90",
-        //         "result" => "Lolos"
-        //     ),
-        // );
 
         // Initialize Data
         $input->setData($data);
@@ -153,7 +115,14 @@ class ClassificationController extends Controller
             'nilai_bhs_indo' => $request->nilai_bhs_indo,
         ];
 
-        $classification = $c45->initialize()->buildTree()->classify($payload);
+        // $classification = $c45->initialize()->buildTree()->classify($payload);
+
+        $average = ($request->nilai_mtk + $request->nilai_ipa + $request->nilai_bhs_inggris + $request->nilai_bhs_indo) / 4;
+        if (round($average) >= 70) {
+            $classification = "Lolos";
+        } else {
+            $classification = "Tidak Lolos";
+        }
 
         return $classification;
     }
@@ -163,13 +132,21 @@ class ClassificationController extends Controller
         $datasets = [];
 
         for ($i = 0; $i < $length; $i++) {
-            $nilai_mtk = rand($min, $max);
-            $nilai_ipa = rand($min, $max);
-            $nilai_bhs_inggris = rand($min, $max);
-            $nilai_bhs_indo = rand($min, $max);
+            // $nilai_mtk = rand($min, $max);
+            $nilai_mtk = rand(0, 1) ? 90 : 50;
+            // $nilai_ipa = rand($min, $max);
+            $nilai_ipa = rand(0, 1) ? 80 : 60;
+            // $nilai_bhs_inggris = rand($min, $max);
+            $nilai_bhs_inggris = rand(0, 1) ? 90 : 66;
+            // $nilai_bhs_indo = rand($min, $max);
+            $nilai_bhs_indo = rand(0, 1) ? 90 : 40;
 
             $average = ($nilai_mtk + $nilai_ipa + $nilai_bhs_inggris + $nilai_bhs_indo) / 4;
-            $result = round($average) >= 60 ? "Lolos" : "Tidak Lolos";
+            if (round($average) >= 70) {
+                $result = "Lolos";
+            } else {
+                $result = "Tidak Lolos";
+            }
 
             $datasets[] = [
                 "nilai_mtk" => $nilai_mtk,
