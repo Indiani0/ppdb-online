@@ -18,8 +18,8 @@ class StudentFactory extends Factory
     {
         return [
             // Identitas Calon Siswa
-            'nik' => fake()->numerify('################'),
-            'nisn' => fake()->numerify('##########'),
+            'nik' => fake()->numerify('320#############'),
+            'nisn' => fake()->numerify('002#######'),
             'nama_siswa' => fake()->name(),
             'jenis_kelamin' => fake()->randomElement(['L', 'P']),
             'tempat_lahir' => fake()->city(),
@@ -27,12 +27,19 @@ class StudentFactory extends Factory
             'agama' => fake()->randomElement(['Islam', 'Katholik', 'Buddha', 'Hindu']),
             'alamat_siswa' => fake()->address(),
             'email' => fake()->email(),
-            'telepon' => fake()->numerify('#############'),
+            'telepon' => fake()->numerify('08###########'),
 
             // Sekolah Asal
-            'nama_asal_sekolah' => fake()->company(),
-            'jenjang_sekolah' => fake()->randomElement(['SMP', 'MTs']),
-            'tahun_lulus' => fake()->year(),
+            'nama_asal_sekolah' => fake()->randomElement([
+                'SMPN 1 Rancaekek',
+                'SMP Bakti Ilham',
+                'SMP BPI Rancaekek',
+                'SMP Lugina',
+                'SMP Pasundan Rancaekek',
+                'SMP PGRI Haurpugur'
+            ]),
+            'jenjang_sekolah' => fake()->randomElement(['SMP']),
+            'tahun_lulus' => fake()->randomElement(['2023']),
             'alamat_sekolah' => fake()->streetAddress(),
 
             // Identitas Orang Tua
@@ -46,9 +53,9 @@ class StudentFactory extends Factory
 
             // Data Pendukung
             'nilai_mtk' => rand(0, 1) === 1 ? 70 : 50,
-            'nilai_ipa' => rand(0, 1) === 1 ? 70 : 60,
-            'nilai_bhs_inggris' => rand(0, 1) === 1 ? 78 : 66,
-            'nilai_bhs_indo' => rand(0, 1) === 1 ? 88 : 64,
+            'nilai_ipa' => rand(0, 1) === 1 ? 75 : 60,
+            'nilai_bhs_inggris' => rand(0, 1) === 1 ? 78 : 85,
+            'nilai_bhs_indo' => rand(0, 1) === 1 ? 80 : 97,
             'minat_jurusan' => fake()->randomElement(['Teknik Pembuatan Kain', 'Teknik Elektro Industri', 'Layanan Perbankan Syariah']),
             'foto_siswa' => fake()->imageUrl(640, 480, 'animals', true),
         ];

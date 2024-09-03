@@ -20,15 +20,92 @@ class ClassificationController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
-
-        // Menambah variasi data dengan rentang yang lebih kecil dan jumlah yang lebih banyak
-        $this->datasets = array_merge(
-            $this->datasets,
-            $this->getDummyDatasets(10, 0, 100),
-            $this->getDummyDatasets(10, 0, 100),
-            $this->getDummyDatasets(10, 0, 100),
-            $this->getDummyDatasets(10, 0, 100)
-        );
+        $this->datasets = [
+            [
+                "nilai_mtk" => 70,
+                "nilai_ipa" => 75,
+                "nilai_bhs_inggris" => 85,
+                "nilai_bhs_indo" => 97,
+                "result" => "Lolos"
+            ],
+            [
+                "nilai_mtk" => 50,
+                "nilai_ipa" => 60,
+                "nilai_bhs_inggris" => 78,
+                "nilai_bhs_indo" => 80,
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "nilai_mtk" => 50,
+                "nilai_ipa" => 75,
+                "nilai_bhs_inggris" => 85,
+                "nilai_bhs_indo" => 97,
+                "result" => "Lolos"
+            ],
+            [
+                "nilai_mtk" => 50,
+                "nilai_ipa" => 60,
+                "nilai_bhs_inggris" => 85,
+                "nilai_bhs_indo" => 97,
+                "result" => "Lolos"
+            ],
+            [
+                "nilai_mtk" => 50,
+                "nilai_ipa" => 60,
+                "nilai_bhs_inggris" => 78,
+                "nilai_bhs_indo" => 97,
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "nilai_mtk" => 70,
+                "nilai_ipa" => 75,
+                "nilai_bhs_inggris" => 85,
+                "nilai_bhs_indo" => 80,
+                "result" => "Lolos"
+            ],
+            [
+                "nilai_mtk" => 70,
+                "nilai_ipa" => 75,
+                "nilai_bhs_inggris" => 78,
+                "nilai_bhs_indo" => 80,
+                "result" => "Lolos"
+            ],
+            [
+                "nilai_mtk" => 70,
+                "nilai_ipa" => 60,
+                "nilai_bhs_inggris" => 78,
+                "nilai_bhs_indo" => 80,
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "nilai_mtk" => 50,
+                "nilai_ipa" => 75,
+                "nilai_bhs_inggris" => 78,
+                "nilai_bhs_indo" => 97,
+                "result" => "Lolos"
+            ],
+            [
+                "nilai_mtk" => 70,
+                "nilai_ipa" => 60,
+                "nilai_bhs_inggris" => 85,
+                "nilai_bhs_indo" => 80,
+                "result" => "Lolos"
+            ],
+            [
+                "nilai_mtk" => 70,
+                "nilai_ipa" => 60,
+                "nilai_bhs_inggris" => 78,
+                "nilai_bhs_indo" => 97,
+                "result" => "Lolos"
+            ],
+            [
+                "nilai_mtk" => 50,
+                "nilai_ipa" => 75,
+                "nilai_bhs_inggris" => 85,
+                "nilai_bhs_indo" => 80,
+                "result" => "Lolos"
+            ],
+        ];
     }
 
 
@@ -63,8 +140,95 @@ class ClassificationController extends Controller
             })
             ->toArray();
 
+        $dataArray = array(
+            array(
+                "nilai_mtk" => 70,
+                "nilai_ipa" => 75,
+                "nilai_bhs_inggris" => 85,
+                "nilai_bhs_indo" => 97,
+                "result" => "Lolos"
+            ),
+            array(
+                "nilai_mtk" => 50,
+                "nilai_ipa" => 60,
+                "nilai_bhs_inggris" => 78,
+                "nilai_bhs_indo" => 80,
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "nilai_mtk" => 50,
+                "nilai_ipa" => 75,
+                "nilai_bhs_inggris" => 85,
+                "nilai_bhs_indo" => 97,
+                "result" => "Lolos"
+            ),
+            array(
+                "nilai_mtk" => 50,
+                "nilai_ipa" => 60,
+                "nilai_bhs_inggris" => 85,
+                "nilai_bhs_indo" => 97,
+                "result" => "Lolos"
+            ),
+            array(
+                "nilai_mtk" => 50,
+                "nilai_ipa" => 60,
+                "nilai_bhs_inggris" => 78,
+                "nilai_bhs_indo" => 97,
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "nilai_mtk" => 70,
+                "nilai_ipa" => 75,
+                "nilai_bhs_inggris" => 85,
+                "nilai_bhs_indo" => 80,
+                "result" => "Lolos"
+            ),
+            array(
+                "nilai_mtk" => 70,
+                "nilai_ipa" => 75,
+                "nilai_bhs_inggris" => 78,
+                "nilai_bhs_indo" => 80,
+                "result" => "Lolos"
+            ),
+            array(
+                "nilai_mtk" => 70,
+                "nilai_ipa" => 60,
+                "nilai_bhs_inggris" => 78,
+                "nilai_bhs_indo" => 80,
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "nilai_mtk" => 50,
+                "nilai_ipa" => 75,
+                "nilai_bhs_inggris" => 78,
+                "nilai_bhs_indo" => 97,
+                "result" => "Lolos"
+            ),
+            array(
+                "nilai_mtk" => 70,
+                "nilai_ipa" => 60,
+                "nilai_bhs_inggris" => 85,
+                "nilai_bhs_indo" => 80,
+                "result" => "Lolos"
+            ),
+            array(
+                "nilai_mtk" => 70,
+                "nilai_ipa" => 60,
+                "nilai_bhs_inggris" => 78,
+                "nilai_bhs_indo" => 97,
+                "result" => "Lolos"
+            ),
+            array(
+                "nilai_mtk" => 50,
+                "nilai_ipa" => 75,
+                "nilai_bhs_inggris" => 85,
+                "nilai_bhs_indo" => 80,
+                "result" => "Lolos"
+            ),
+        );
+
         // Initialize Data
-        $input->setData($data);
+        $input->setData($dataArray);
         $input->setAttributes(['nilai_mtk', 'nilai_ipa', 'nilai_bhs_inggris', 'nilai_bhs_indo', 'result']);
 
         // Initialize C4.5
@@ -115,49 +279,9 @@ class ClassificationController extends Controller
             'nilai_bhs_indo' => $request->nilai_bhs_indo,
         ];
 
-        // $classification = $c45->initialize()->buildTree()->classify($payload);
-
-        $average = ($request->nilai_mtk + $request->nilai_ipa + $request->nilai_bhs_inggris + $request->nilai_bhs_indo) / 4;
-        if (round($average) >= 70) {
-            $classification = "Lolos";
-        } else {
-            $classification = "Tidak Lolos";
-        }
+        $classification = $buildTree->classify($payload);
 
         return $classification;
-    }
-
-    private function getDummyDatasets(int $length, int $min = 0, int $max = 100)
-    {
-        $datasets = [];
-
-        for ($i = 0; $i < $length; $i++) {
-            // $nilai_mtk = rand($min, $max);
-            $nilai_mtk = rand(0, 1) ? 90 : 50;
-            // $nilai_ipa = rand($min, $max);
-            $nilai_ipa = rand(0, 1) ? 80 : 60;
-            // $nilai_bhs_inggris = rand($min, $max);
-            $nilai_bhs_inggris = rand(0, 1) ? 90 : 66;
-            // $nilai_bhs_indo = rand($min, $max);
-            $nilai_bhs_indo = rand(0, 1) ? 90 : 40;
-
-            $average = ($nilai_mtk + $nilai_ipa + $nilai_bhs_inggris + $nilai_bhs_indo) / 4;
-            if (round($average) >= 70) {
-                $result = "Lolos";
-            } else {
-                $result = "Tidak Lolos";
-            }
-
-            $datasets[] = [
-                "nilai_mtk" => $nilai_mtk,
-                "nilai_ipa" => $nilai_ipa,
-                "nilai_bhs_inggris" => $nilai_bhs_inggris,
-                "nilai_bhs_indo" => $nilai_bhs_indo,
-                "result" => $result
-            ];
-        }
-
-        return $datasets;
     }
 
     public function calculateDominantPercentage($student)
