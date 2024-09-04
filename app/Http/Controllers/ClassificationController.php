@@ -105,6 +105,27 @@ class ClassificationController extends Controller
                 "nilai_bhs_indo" => 80,
                 "result" => "Lolos"
             ],
+            [
+                "nilai_mtk" => 70,
+                "nilai_ipa" => 60,
+                "nilai_bhs_inggris" => 85,
+                "nilai_bhs_indo" => 97,
+                "result" => "Lolos"
+            ],
+            [
+                "nilai_mtk" => 50,
+                "nilai_ipa" => 75,
+                "nilai_bhs_inggris" => 78,
+                "nilai_bhs_indo" => 80,
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "nilai_mtk" => 50,
+                "nilai_ipa" => 60,
+                "nilai_bhs_inggris" => 85,
+                "nilai_bhs_indo" => 80,
+                "result" => "Tidak Lolos"
+            ],
         ];
     }
 
@@ -224,6 +245,27 @@ class ClassificationController extends Controller
                 "nilai_bhs_inggris" => 85,
                 "nilai_bhs_indo" => 80,
                 "result" => "Lolos"
+            ),
+            array(
+                "nilai_mtk" => 70,
+                "nilai_ipa" => 60,
+                "nilai_bhs_inggris" => 85,
+                "nilai_bhs_indo" => 97,
+                "result" => "Lolos"
+            ),
+            array(
+                "nilai_mtk" => 50,
+                "nilai_ipa" => 75,
+                "nilai_bhs_inggris" => 78,
+                "nilai_bhs_indo" => 80,
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "nilai_mtk" => 50,
+                "nilai_ipa" => 60,
+                "nilai_bhs_inggris" => 85,
+                "nilai_bhs_indo" => 80,
+                "result" => "Tidak Lolos"
             ),
         );
 
