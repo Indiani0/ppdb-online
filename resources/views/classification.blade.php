@@ -19,8 +19,8 @@
                             <th>Nilai <br>IPA</th>
                             <th>Nilai <br>Bhs. Inggris</th>
                             <th>Nilai <br>Bhs. Indonesia</th>
-                            <th>Persentase <br>Nilai Dominan</th>
                             <th>Hasil Klasifikasi</th>
+                            <th>Tingkat Kelolosan (%)</th>
                         </tr>
                     </thead>
 
@@ -32,10 +32,24 @@
                         @else
                             @foreach ($classifications as $classification)
                                 @php
-                                    $student = $classification->student;
-                                    $dominantPercentages = app(
-                                        \App\Http\Controllers\ClassificationController::class,
-                                    )->calculateDominantPercentage($student);
+                                    // Menghitung tingkat kelolosan
+                                    $totalSubjects = 4;
+                                    $passedSubjects = 0;
+
+                                    if ($classification->student->nilai_mtk >= 70) {
+                                        $passedSubjects++;
+                                    }
+                                    if ($classification->student->nilai_ipa >= 75) {
+                                        $passedSubjects++;
+                                    }
+                                    if ($classification->student->nilai_bhs_inggris >= 85) {
+                                        $passedSubjects++;
+                                    }
+                                    if ($classification->student->nilai_bhs_indo >= 97) {
+                                        $passedSubjects++;
+                                    }
+
+                                    $passingPercentage = ($passedSubjects / $totalSubjects) * 100;
                                 @endphp
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
@@ -44,12 +58,8 @@
                                     <td>{{ $classification->student->nilai_ipa }}</td>
                                     <td>{{ $classification->student->nilai_bhs_inggris }}</td>
                                     <td>{{ $classification->student->nilai_bhs_indo }}</td>
-                                    <td>
-                                        MTK & IPA: {{ number_format($dominantPercentages['persentase_mtk_ipa'], 2) }}%<br>
-                                        Bhs. Inggris & Bhs. Indo:
-                                        {{ number_format($dominantPercentages['persentase_bhs'], 2) }}%
-                                    </td>
-                                    <td>{{ $classification->result }} </td>
+                                    <td>{{ $classification->result }}</td>
+                                    <td>{{ number_format($passingPercentage, 2) }}%</td>
                                 </tr>
                             @endforeach
                         @endif
@@ -91,6 +101,10 @@
                                     echo $stringTree;
                                 @endphp
                             </pre>
+                            <p
+                                style="padding: 10px; background-color: #28a745; color: white; border-radius: 5px; text-align:center; font-weight: bold;">
+                                Hasil Klasifikasi : {{ $classification->result }}
+                            </p>
                     @endforeach
                 @endif
             </div>
