@@ -205,28 +205,6 @@
                         </tr>
 
                         <tr>
-                            <td><label for="nilai_mtk">Nilai Matematika</label></td>
-                            <td>: <input type="float" id="nilai_mtk" name="nilai_mtk" required></td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="nilai_ipa">Nilai IPA</label></td>
-                            <td>: <input type="float" id="nilai_ipa" name="nilai_ipa" required></td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="nilai_bhs_inggris">Nilai Bahasa Inggris</label></td>
-                            <td>: <input type="float" id="nilai_bhs_inggris" name="nilai_bhs_inggris" required>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="nilai_bhs_indo">Nilai Bahasa Indonesia</label></td>
-                            <td>: <input type="float" id="nilai_bhs_indo" name="nilai_bhs_indo" required>
-                            </td>
-                        </tr>
-
-                        <tr>
                             <td><label for="minat_jurusan">Minat Jurusan</label></td>
                             <td>:
                                 <select name="minat_jurusan" id="minat_jurusan">
