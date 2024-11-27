@@ -152,11 +152,11 @@ class StudentController extends Controller
             'alamat_ibu' => 'required|string',
 
             // Data Pendukung
-            'nilai_mtk' => 'required|numeric',
-            'nilai_ipa' => 'required|numeric',
-            'nilai_bhs_inggris' => 'required|numeric',
-            'nilai_bhs_indo' => 'required|numeric',
-            'minat_jurusan' => 'required|string',
+            'nilai_mtk' => 'nullable|numeric',
+            'nilai_ipa' => 'nullable|numeric',
+            'nilai_bhs_inggris' => 'nullable|numeric',
+            'nilai_bhs_indo' => 'nullable|numeric',
+            'minat_jurusan' => 'nullable|string',
             'foto_siswa' => 'required|file|mimes:jpg,jpeg,png|max:2048',
 
         ]);
@@ -172,7 +172,7 @@ class StudentController extends Controller
 
         Classification::create([
             'student_id' => $res->id,
-            'result' => $resClassify,
+            'result' => $resClassify ?? '0',
         ]);
 
         $user = Auth::user();
