@@ -68,11 +68,80 @@
 
                 <br>
                 <h2>Proses Klasifikasi</h2>
+                <p>Silahkan masukkan data yang akan digunakan untuk melihat hasil dari proses klasifikasi</p>
                 {{-- <p>
                     <b>Pohon Keputusan:</b>
                     <br>
                     <pre>{{ $stringTree }}</pre>
                 </p> --}}
+
+                <form action="{{ route('classifications.store') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+
+                    <div class="form-group">
+                        <label for="nama_siswa">Nama Lengkap</label>
+                        <select id="nama_siswa" name="nama_siswa" class="form-control" required>
+                            <option value="" disabled selected>Pilih Nama Siswa</option>
+                            @foreach ($students as $student)
+                                <option value="{{ $student->id }}">{{ $student->nama_siswa }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jenis_kelamin">Jenis Kelamin</label>
+                        <input type="text" id="jenis_kelamin" name="jenis_kelamin" class="form-control" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="test_minat_bakat">Nilai Test Minat Bakat</label>
+                        <select id="test_minat_bakat" name="test_minat_bakat" class="form-control" required>
+                            <option value="" disabled selected></option>
+                            <option value="kompeten" {{ old('test_minat_bakat') == 'kompeten' ? 'selected' : '' }}>Kompeten
+                            </option>
+                            <option value="cukup kompeten"
+                                {{ old('test_minat_bakat') == 'cukup kompeten' ? 'selected' : '' }}>Cukup Kompeten
+                            </option>
+                            <option value="belum kompeten"
+                                {{ old('test_minat_bakat') == 'Belum Kompeten' ? 'selected' : '' }}>Belum Kompeten</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="test_psikotes">Nilai Test Psikotes</label>
+                        <select id="test_psikotes" name="test_psikotes" class="form-control" required>
+                            <option value="" disabled selected></option>
+                            <option value="kompeten" {{ old('test_psikotes') == 'kompeten' ? 'selected' : '' }}>Kompeten
+                            </option>
+                            <option value="cukup kompeten"
+                                {{ old('test_psikotes') == 'cukup kompeten' ? 'selected' : '' }}>Cukup Kompeten
+                            </option>
+                            <option value="belum kompeten"
+                                {{ old('test_psikotes') == 'Belum Kompeten' ? 'selected' : '' }}>Belum Kompeten</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="test_numerik">Nilai Test Numerik</label>
+                        <select id="test_numerik" name="test_numerik" class="form-control" required>
+                            <option value="" disabled selected></option>
+                            <option value="kompeten" {{ old('test_numerik') == 'kompeten' ? 'selected' : '' }}>Kompeten
+                            </option>
+                            <option value="cukup kompeten" {{ old('test_numerik') == 'cukup kompeten' ? 'selected' : '' }}>
+                                Cukup Kompeten
+                            </option>
+                            <option value="belum kompeten" {{ old('test_numerik') == 'Belum Kompeten' ? 'selected' : '' }}>
+                                Belum Kompeten</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="minat_jurusan">Minat Jurusan</label>
+                        <input type="text" id="minat_jurusan" name="minat_jurusan" class="form-control" readonly>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-3">Lakukan Klasifikasi C4.5</button>
+                </form>
 
                 @if ($classifications->isEmpty())
                     <b style="color: red">Tidak ada data untuk proses klasifikasi!</b>
@@ -110,4 +179,14 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById('nama_siswa').addEventListener('change', function() {
+            let selectedStudent = @json($students);
+            let student = selectedStudent.find(s => s.id == this.value);
+
+            document.getElementById('jenis_kelamin').value = student.jenis_kelamin;
+            document.getElementById('minat_jurusan').value = student.minat_jurusan;
+        });
+    </script>
 @endsection

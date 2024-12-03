@@ -28,6 +28,7 @@ Route::get('/students/pdf', [App\Http\Controllers\StudentController::class, 'gen
 
 Route::post('/users', [App\Http\Controllers\UserController::class, 'store'])->name('users.store');
 Route::post('/student', [App\Http\Controllers\FormController::class, 'store'])->name('students.store');
+Route::post('/classification', [App\Http\Controllers\ClassificationController::class, 'store'])->name('classifications.store');
 Route::post('/logout', function () {
     Auth::logout();
     return redirect('/');

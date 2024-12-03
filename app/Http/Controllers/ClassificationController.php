@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Algorithm\C45;
-use App\Models\Classification;
 use App\Models\Student;
+use Illuminate\Http\Request;
+use App\Models\Classification;
 use Illuminate\Support\Facades\DB;
 
 class ClassificationController extends Controller
@@ -137,6 +138,9 @@ class ClassificationController extends Controller
      */
     public function index()
     {
+        $classifications = Classification::with('student')->get();
+        $students = Student::select('id', 'nama_siswa', 'jenis_kelamin', 'minat_jurusan')->get();
+
         $c45 = new C45();
         $input = new C45\DataInput;
 
@@ -289,6 +293,7 @@ class ClassificationController extends Controller
             'classifications' => $classifications,
             'arrayTree' => $arrayTree,
             'stringTree' => $stringTree,
+            'students' => $students,
         ]);
     }
 
