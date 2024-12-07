@@ -52,10 +52,6 @@ class StudentFactory extends Factory
             'alamat_ibu' => fake()->address(),
 
             // Data Pendukung
-            'nilai_mtk' => rand(0, 1) === 1 ? 70 : 50,
-            'nilai_ipa' => rand(0, 1) === 1 ? 75 : 60,
-            'nilai_bhs_inggris' => rand(0, 1) === 1 ? 78 : 85,
-            'nilai_bhs_indo' => rand(0, 1) === 1 ? 80 : 97,
             'minat_jurusan' => fake()->randomElement(['Teknik Pembuatan Kain', 'Teknik Elektro Industri', 'Layanan Perbankan Syariah']),
             'foto_siswa' => fake()->imageUrl(640, 480, 'animals', true),
         ];

@@ -70,11 +70,6 @@ class StudentController extends Controller
             'alamat_ayah' => 'required|string',
 
             // Data Pendukung
-            'nilai_mtk' => 'nullable|numeric',
-            'nilai_ipa' => 'nullable|numeric',
-            'nilai_bhs_inggris' => 'nullable|numeric',
-            'nilai_bhs_indo' => 'nullable|numeric',
-
             'minat_jurusan' => 'required|string',
             'foto_siswa' => 'nullable|file|mimes:jpg,jpeg,png|max:2048',
         ]);
