@@ -102,10 +102,6 @@ class StudentController extends Controller
         $student->alamat_ibu = $request->alamat_ibu;
 
         // Data Pendukung
-        $student->nilai_mtk = $request->nilai_mtk;
-        $student->nilai_ipa = $request->nilai_ipa;
-        $student->nilai_bhs_inggris = $request->nilai_bhs_inggris;
-        $student->nilai_bhs_indo = $request->nilai_bhs_indo;
         $student->minat_jurusan = $request->minat_jurusan;
 
         if ($request->hasFile('foto_siswa')) {
@@ -148,10 +144,6 @@ class StudentController extends Controller
             'alamat_ibu' => 'required|string',
 
             // Data Pendukung
-            'nilai_mtk' => 'nullable|numeric',
-            'nilai_ipa' => 'nullable|numeric',
-            'nilai_bhs_inggris' => 'nullable|numeric',
-            'nilai_bhs_indo' => 'nullable|numeric',
             'minat_jurusan' => 'nullable|string',
             'foto_siswa' => 'required|file|mimes:jpg,jpeg,png|max:2048',
 
