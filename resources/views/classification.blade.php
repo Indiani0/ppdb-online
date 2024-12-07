@@ -75,6 +75,22 @@
                     <pre>{{ $stringTree }}</pre>
                 </p> --}}
 
+                @if (session('success'))
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                @endif
+
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
                 <form action="{{ route('classifications.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
 
@@ -114,10 +130,12 @@
                             <option value="kompeten" {{ old('test_psikotes') == 'kompeten' ? 'selected' : '' }}>Kompeten
                             </option>
                             <option value="cukup kompeten"
-                                {{ old('test_psikotes') == 'cukup kompeten' ? 'selected' : '' }}>Cukup Kompeten
+                                {{ old('test_psikotes') == 'cukup kompeten' ? 'selected' : '' }}>
+                                Cukup Kompeten
                             </option>
                             <option value="belum kompeten"
-                                {{ old('test_psikotes') == 'Belum Kompeten' ? 'selected' : '' }}>Belum Kompeten</option>
+                                {{ old('test_psikotes') == 'Belum Kompeten' ? 'selected' : '' }}>
+                                Belum Kompeten</option>
                         </select>
                     </div>
 

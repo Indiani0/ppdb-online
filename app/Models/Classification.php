@@ -11,8 +11,11 @@ class Classification extends Model
     use HasFactory;
 
     protected $fillable = [
-        'result',
         'student_id',
+        'test_minat_bakat',
+        'test_psikotes',
+        'test_numerik',
+        'result',
     ];
 
     public function student(): BelongsTo
