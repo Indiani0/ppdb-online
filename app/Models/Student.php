@@ -38,10 +38,6 @@ class Student extends Model
         'alamat_ibu',
 
         // Data Pendukung
-        'nilai_mtk',
-        'nilai_ipa',
-        'nilai_bhs_inggris',
-        'nilai_bhs_indo',
         'minat_jurusan',
         'foto_siswa',
     ];

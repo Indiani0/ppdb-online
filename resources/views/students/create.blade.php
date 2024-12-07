@@ -171,30 +171,6 @@
                     {{-- Data Pendukung --}}
                     <p>IV. DATA PENDUKUNG</p>
                     <div class="mb-3">
-                        <label for="nilai_mtk" class="form-label">Nilai Matematika</label>
-                        <input type="float" class="form-control" id="nilai_mtk" name="nilai_mtk"
-                            value="{{ old('nilai_mtk') }}" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="nilai_ipa" class="form-label">Nilai IPA</label>
-                        <input type="float" class="form-control" id="nilai_ipa" name="nilai_ipa"
-                            value="{{ old('nilai_ipa') }}" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="nilai_bhs_inggris" class="form-label">Nilai Bahasa Inggris</label>
-                        <input type="float" class="form-control" id="nilai_bhs_inggris" name="nilai_bhs_inggris"
-                            value="{{ old('nilai_bhs_inggris') }}" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="nilai_bhs_indo" class="form-label">Nilai Bahasa Indonesia</label>
-                        <input type="float" class="form-control" id="nilai_bhs_indo" name="nilai_bhs_indo"
-                            value="{{ old('nilai_bhs_indo') }}" required>
-                    </div>
-
-                    <div class="mb-3">
                         <label for="minat_jurusan" class="form-label">Minat Jurusan</label>
                         <select class="form-control" id="minat_jurusan" name="minat_jurusan" required>
                             <option value="Teknik Pembuatan Kain"
