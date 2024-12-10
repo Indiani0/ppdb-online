@@ -15,8 +15,11 @@
                         <tr>
                             <th>No</th>
                             <th>Nama Siswa</th>
+                            <th>Jenis <br> Kelamin</th>
                             <th>Nilai Test <br>Minat Bakat</th>
+                            <th>Nilai Test <br>Psikotes</th>
                             <th>Nilai Test <br>Numerik</th>
+                            <th>Minat Jurusan</th>
                             <th>Hasil Klasifikasi</th>
                         </tr>
                     </thead>
@@ -31,8 +34,11 @@
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $classification->student->nama_siswa ?? 'Data tidak ditemukan' }}</td>
+                                    <td>{{ $classification->student->jenis_kelamin }}</td>
                                     <td>{{ $classification->test_minat_bakat }}</td>
                                     <td>{{ $classification->test_psikotes }}</td>
+                                    <td>{{ $classification->test_numerik }}</td>
+                                    <td>{{ $classification->student->minat_jurusan }}</td>
                                     <td>{{ $classification->result }}</td>
                                 </tr>
                             @endforeach
