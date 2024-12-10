@@ -37,10 +37,6 @@ return new class extends Migration
             $table->text('alamat_ibu');
 
             // Data Pendukung
-            $table->float('nilai_mtk')->nullable();
-            $table->float('nilai_ipa')->nullable();
-            $table->float('nilai_bhs_inggris')->nullable();
-            $table->float('nilai_bhs_indo')->nullable();
             $table->string('minat_jurusan')->nullable();
             $table->string('foto_siswa')->nullable();
 

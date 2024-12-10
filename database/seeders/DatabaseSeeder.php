@@ -42,13 +42,13 @@ class DatabaseSeeder extends Seeder
         for ($i = 0; $i < 10; $i++) {
             $student = Student::factory()->create();
 
-            $controller = app(ClassificationController::class);
+            // $controller = app(ClassificationController::class);
 
-            $res = $controller->getClassification($student, true);
+            // $res = $controller->getClassification($student, true);
 
             Classification::create([
                 "student_id" => $student->id,
-                "result" => $res
+                // "result" => $res
             ]);
         }
     }
