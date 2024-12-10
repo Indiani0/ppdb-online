@@ -9,6 +9,38 @@
 
                 <hr>
 
+                <h2>Dataset Klasifikasi</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Siswa</th>
+                            <th>Nilai Test <br>Minat Bakat</th>
+                            <th>Nilai Test <br>Numerik</th>
+                            <th>Hasil Klasifikasi</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @if ($classifications->isEmpty())
+                            <tr>
+                                <td colspan="5"><b style="color: red">Tidak ada data untuk diklasifikasikan!</b></td>
+                            </tr>
+                        @else
+                            @foreach ($classifications as $classification)
+                                <tr>
+                                    <td>{{ $loop->iteration }}</td>
+                                    <td>{{ $classification->student->nama_siswa ?? 'Data tidak ditemukan' }}</td>
+                                    <td>{{ $classification->test_minat_bakat }}</td>
+                                    <td>{{ $classification->test_psikotes }}</td>
+                                    <td>{{ $classification->result }}</td>
+                                </tr>
+                            @endforeach
+                        @endif
+                    </tbody>
+
+                </table>
+
                 <br>
                 <h2>Proses Klasifikasi</h2>
                 <p>Silahkan masukkan data yang akan digunakan untuk melihat hasil dari proses klasifikasi</p>
@@ -67,7 +99,8 @@
                             <option value="" disabled selected></option>
                             <option value="kompeten" {{ old('test_psikotes') == 'kompeten' ? 'selected' : '' }}>Kompeten
                             </option>
-                            <option value="cukup kompeten" {{ old('test_psikotes') == 'cukup kompeten' ? 'selected' : '' }}>
+                            <option value="cukup kompeten"
+                                {{ old('test_psikotes') == 'cukup kompeten' ? 'selected' : '' }}>
                                 Cukup Kompeten
                             </option>
                             <option value="belum kompeten"
@@ -97,7 +130,6 @@
 
                     <button type="submit" class="btn btn-primary mt-3">Lakukan Klasifikasi C4.5</button>
                 </form>
-
             </div>
         </div>
     </div>

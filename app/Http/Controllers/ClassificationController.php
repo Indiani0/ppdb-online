@@ -31,11 +31,10 @@ class ClassificationController extends Controller
      */
     public function index()
     {
-        $students = Student::select('id', 'nama_siswa', 'jenis_kelamin', 'minat_jurusan')->get();
+        $classifications = Classification::with('student')->get();
+        $students = Student::all();
 
-        return view('classification', [
-            'students' => $students,
-        ]);
+        return view('classification', compact('classifications', 'students'));
     }
 
     public function store(Request $request)
