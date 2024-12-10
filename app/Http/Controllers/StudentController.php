@@ -156,11 +156,12 @@ class StudentController extends Controller
 
         // Classification
         $classificationController = new ClassificationController();
-        $resClassify = $classificationController->getClassification($res);
+        // $resClassify = $classificationController->getClassification($res);
 
         Classification::create([
             'student_id' => $res->id,
-            'result' => $resClassify ?? '0',
+            // 'result' => $resClassify ?? '0',
+            // 'result' => '0',
         ]);
 
         $user = Auth::user();
