@@ -12,7 +12,6 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('classifications', function (Blueprint $table) {
-            // $table->id();
             $table->unsignedBigInteger('student_id');
             $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
             $table->string('test_minat_bakat')->nullable();

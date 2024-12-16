@@ -152,17 +152,18 @@ class StudentController extends Controller
         $validated['foto_siswa'] = $request->file('foto_siswa')->store('uploads', 'public');
 
         // Simpan data ke database
-        $res = Student::create($validated);
+        // $res = Student::create($validated);
+        Student::create($validated);
 
         // Classification
-        $classificationController = new ClassificationController();
+        // $classificationController = new ClassificationController();
         // $resClassify = $classificationController->getClassification($res);
 
-        Classification::create([
-            'student_id' => $res->id,
-            // 'result' => $resClassify ?? '0',
-            // 'result' => '0',
-        ]);
+        // Classification::create([
+        // 'student_id' => $res->id,
+        // 'result' => $resClassify ?? '0',
+        // 'result' => '0',
+        // ]);
 
         $user = Auth::user();
 
