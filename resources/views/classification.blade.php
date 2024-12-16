@@ -25,26 +25,25 @@
                     </thead>
 
                     <tbody>
-                        @if ($classifications->isEmpty())
+                        @if ($students->isEmpty())
                             <tr>
                                 <td colspan="5"><b style="color: red">Tidak ada data untuk diklasifikasikan!</b></td>
                             </tr>
                         @else
-                            @foreach ($classifications as $classification)
+                            @foreach ($students as $student)
                                 <tr>
-                                    <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $classification->student->nama_siswa ?? 'Data tidak ditemukan' }}</td>
-                                    <td>{{ $classification->student->jenis_kelamin }}</td>
-                                    <td>{{ $classification->test_minat_bakat }}</td>
-                                    <td>{{ $classification->test_psikotes }}</td>
-                                    <td>{{ $classification->test_numerik }}</td>
-                                    <td>{{ $classification->student->minat_jurusan }}</td>
-                                    <td>{{ $classification->result }}</td>
+                                    <td>{{ $student->id }}</td>
+                                    <td>{{ $student->nama_siswa ?? 'Data tidak ditemukan' }}</td>
+                                    <td>{{ $student->jenis_kelamin }}</td>
+                                    <td>{{ $student->test_minat_bakat }}</td>
+                                    <td>{{ $student->test_psikotes }}</td>
+                                    <td>{{ $student->test_numerik }}</td>
+                                    <td>{{ $student->minat_jurusan }}</td>
+                                    <td>{{ $student->result }}</td>
                                 </tr>
                             @endforeach
                         @endif
                     </tbody>
-
                 </table>
 
                 <br>

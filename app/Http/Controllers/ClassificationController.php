@@ -31,10 +31,22 @@ class ClassificationController extends Controller
      */
     public function index()
     {
-        $classifications = Classification::with('student')->get();
-        $students = Student::all();
+        $students = Student::leftJoin('classifications', 'students.id', '=', 'classifications.student_id')
+            ->select(
+                'students.id',
+                'students.nama_siswa',
+                'students.jenis_kelamin',
+                'classifications.test_minat_bakat',
+                'classifications.test_psikotes',
+                'classifications.test_numerik',
+                'students.minat_jurusan',
+                'classifications.result'
+            )->orderBy('id', 'asc')
+            ->get();
 
-        return view('classification', compact('classifications', 'students'));
+        return view('classification', [
+            'students' => $students,
+        ]);
     }
 
     public function store(Request $request)
