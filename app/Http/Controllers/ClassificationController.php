@@ -48,6 +48,12 @@ class ClassificationController extends Controller
 
         $student = Student::findOrFail($validatedData['nama_siswa']);
 
+        $existingClassification = Classification::where('student_id', $validatedData['nama_siswa'])->first();
+
+        if ($existingClassification) {
+            return redirect()->back()->withErrors(['duplicate' => 'Data klasifikasi untuk siswa ini sudah ada!']);
+        }
+
         $classification = Classification::create([
             'student_id' => $student->id,
             'test_minat_bakat' => $validatedData['test_minat_bakat'],
