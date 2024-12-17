@@ -268,6 +268,239 @@ class ClassificationController extends Controller
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Lolos"
             ],
+
+            // Teknik Elektro Industri
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ], //40
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ], //41
+            [
+                "test_minat_bakat" => "Belum Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ], //42
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ], //44
+            [
+                "test_minat_bakat" => "Belum Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ], //61
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ], //63
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ], //67
+            [
+                "test_minat_bakat" => "Belum Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ], //68
+            [
+                "test_minat_bakat" => "Belum Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
         ];
     }
 
@@ -540,6 +773,239 @@ class ClassificationController extends Controller
                 "test_psikotes" => "Cukup Kompeten",
                 "test_numerik" => "Cukup Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Lolos"
+            ),
+
+            // Teknik Elektro Industri
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ), //40
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ), //41
+            array(
+                "test_minat_bakat" => "Belum Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ), //42
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ), //44
+            array(
+                "test_minat_bakat" => "Belum Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ), //61
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ), //63
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ), //67
+            array(
+                "test_minat_bakat" => "Belum Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ), //68
+            array(
+                "test_minat_bakat" => "Belum Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
                 "result" => "Lolos"
             ),
         );
