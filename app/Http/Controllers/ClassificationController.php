@@ -501,6 +501,183 @@ class ClassificationController extends Controller
                 "minat_jurusan" => "Teknik Elektro Industri",
                 "result" => "Lolos"
             ],
+
+            // Layanan Perbankan Syariah
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ], //83
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ], //85
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
         ];
     }
 
@@ -1006,6 +1183,183 @@ class ClassificationController extends Controller
                 "test_psikotes" => "Cukup Kompeten",
                 "test_numerik" => "Cukup Kompeten",
                 "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+
+            // Layanan Perbankan Syariah
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ), //83
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ), //85
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
                 "result" => "Lolos"
             ),
         );
