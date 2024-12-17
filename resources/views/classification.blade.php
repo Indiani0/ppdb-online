@@ -135,6 +135,43 @@
 
                     <button type="submit" class="btn btn-primary mt-3">Lakukan Klasifikasi C4.5</button>
                 </form>
+
+                {{-- <p>
+                    <b>Pohon Keputusan:</b>
+                    <br>
+                    <pre>{{ $stringTree }}</pre>
+                </p> --}}
+
+                @foreach ($classifications as $classification)
+                    <h4><b>Pohon Keputusan untuk {{ $classification->student->nama_siswa }}</h4><b>
+                        <pre>
+                                @php
+                                    // Mengambil data siswa
+                                    $student = $classification->student;
+
+                                    // Menyiapkan payload untuk klasifikasi ulang
+                                    $payload = [
+                                        'test_minat_bakat' => $student->test_minat_bakat,
+                                        'test_psikotes' => $student->test_psikotes,
+                                        'test_numerik' => $student->test_numerik,
+                                        'minat_jurusan' => $student->minat_jurusan,
+                                    ];
+
+                                    // Melakukan klasifikasi ulang untuk siswa ini
+                                    $classificationResult = app(
+                                        \App\Http\Controllers\ClassificationController::class,
+                                    )->getClassification($student, false);
+
+                                    echo '<br>';
+                                    echo $stringTree;
+                                @endphp
+                            </pre>
+                        <p
+                            style="padding: 10px; background-color: #28a745; color: white; border-radius: 5px; text-align:center; font-weight: bold;">
+                            Hasil Klasifikasi : {{ $classification->result }}
+                        </p>
+                @endforeach
+
             </div>
         </div>
     </div>

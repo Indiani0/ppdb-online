@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('classifications', function (Blueprint $table) {
             $table->unsignedBigInteger('student_id');
             $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
-            $table->string('test_minat_bakat')->nullable();
-            $table->string('test_psikotes')->nullable();
-            $table->string('test_numerik')->nullable();
-            $table->string('result')->nullable();
+            $table->string('test_minat_bakat');
+            $table->string('test_psikotes');
+            $table->string('test_numerik');
+            $table->string('result');
             $table->timestamps();
         });
     }
