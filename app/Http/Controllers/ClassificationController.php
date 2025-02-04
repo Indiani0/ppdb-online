@@ -21,43 +21,8 @@ class ClassificationController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+
         $this->datasets = [
-            // Teknik Pembuatan Kain
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
             [
                 "test_minat_bakat" => "Kompeten",
                 "test_psikotes" => "Kompeten",
@@ -68,16 +33,9 @@ class ClassificationController extends Controller
             [
                 "test_minat_bakat" => "Kompeten",
                 "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Lolos"
-            ],
-            [ //9
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Tidak Lolos"
             ],
             [
                 "test_minat_bakat" => "Kompeten",
@@ -85,30 +43,16 @@ class ClassificationController extends Controller
                 "test_numerik" => "Cukup Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Lolos"
-            ], //11
+            ],
             [
                 "test_minat_bakat" => "Cukup Kompeten",
                 "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Tidak Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Lolos"
             ],
             [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
+                "test_minat_bakat" => "Cukup Kompeten",
                 "test_psikotes" => "Kompeten",
                 "test_numerik" => "Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
@@ -116,64 +60,8 @@ class ClassificationController extends Controller
             ],
             [
                 "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
                 "test_psikotes" => "Kompeten",
                 "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Lolos"
             ],
@@ -186,503 +74,70 @@ class ClassificationController extends Controller
             ],
             [
                 "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ], //27
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Belum Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Tidak Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
                 "test_psikotes" => "Cukup Kompeten",
                 "test_numerik" => "Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Lolos"
             ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ],
-
-            // Teknik Elektro Industri
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ], //40
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Tidak Lolos"
-            ], //41
-            [
-                "test_minat_bakat" => "Belum Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Tidak Lolos"
-            ], //42
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Tidak Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ], //44
-            [
-                "test_minat_bakat" => "Belum Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Tidak Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ], //61
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Tidak Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ], //63
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Tidak Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ], //67
-            [
-                "test_minat_bakat" => "Belum Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Tidak Lolos"
-            ], //68
-            [
-                "test_minat_bakat" => "Belum Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Tidak Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ],
-
-            // Layanan Perbankan Syariah
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ], //83
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Tidak Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ], //85
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Tidak Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ],
-
-            //Additional data (Teknik Pembuatan Kain)
             [
                 "test_minat_bakat" => "Belum Kompeten",
                 "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
                 "test_numerik" => "Belum Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Tidak Lolos"
@@ -695,37 +150,9 @@ class ClassificationController extends Controller
                 "result" => "Tidak Lolos"
             ],
             [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Tidak Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Tidak Lolos"
-            ],
-            [
                 "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
+                "test_psikotes" => "Belum Kompeten",
                 "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Tidak Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Tidak Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Belum Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Tidak Lolos"
             ],
@@ -739,7 +166,7 @@ class ClassificationController extends Controller
             [
                 "test_minat_bakat" => "Belum Kompeten",
                 "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
+                "test_numerik" => "Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Tidak Lolos"
             ],
@@ -752,15 +179,8 @@ class ClassificationController extends Controller
             ],
             [
                 "test_minat_bakat" => "Belum Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Tidak Lolos"
-            ],
-            [
-                "test_minat_bakat" => "Belum Kompeten",
                 "test_psikotes" => "Kompeten",
-                "test_numerik" => "Belum Kompeten",
+                "test_numerik" => "Cukup Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Tidak Lolos"
             ],
@@ -778,11 +198,115 @@ class ClassificationController extends Controller
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Tidak Lolos"
             ],
-
-            //Additional data (Teknik Elektro Industri)
+            [
+                "test_minat_bakat" => "Belum Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Belum Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ],
+            //TEI
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ],
             [
                 "test_minat_bakat" => "Belum Kompeten",
                 "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
                 "test_numerik" => "Belum Kompeten",
                 "minat_jurusan" => "Teknik Elektro Industri",
                 "result" => "Tidak Lolos"
@@ -819,6 +343,20 @@ class ClassificationController extends Controller
                 "test_minat_bakat" => "Cukup Kompeten",
                 "test_psikotes" => "Belum Kompeten",
                 "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Belum Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Belum Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
                 "minat_jurusan" => "Teknik Elektro Industri",
                 "result" => "Tidak Lolos"
             ],
@@ -864,11 +402,101 @@ class ClassificationController extends Controller
                 "minat_jurusan" => "Teknik Elektro Industri",
                 "result" => "Tidak Lolos"
             ],
-
-            //Additional data (Layanan Perbankan Syariah)
+            //LPS
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ],
             [
                 "test_minat_bakat" => "Belum Kompeten",
                 "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Tidak Lolos"
+            ],
+            [
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
                 "test_numerik" => "Belum Kompeten",
                 "minat_jurusan" => "Layanan Perbankan Syariah",
                 "result" => "Tidak Lolos"
@@ -992,42 +620,6 @@ class ClassificationController extends Controller
             ->get();
 
         $dataArray = array(
-            // Teknik Pembuatan Kain
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
             array(
                 "test_minat_bakat" => "Kompeten",
                 "test_psikotes" => "Kompeten",
@@ -1038,16 +630,9 @@ class ClassificationController extends Controller
             array(
                 "test_minat_bakat" => "Kompeten",
                 "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Lolos"
-            ), //9
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Tidak Lolos"
             ),
             array(
                 "test_minat_bakat" => "Kompeten",
@@ -1055,30 +640,16 @@ class ClassificationController extends Controller
                 "test_numerik" => "Cukup Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Lolos"
-            ), //11
+            ),
             array(
                 "test_minat_bakat" => "Cukup Kompeten",
                 "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Tidak Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Lolos"
             ),
             array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
+                "test_minat_bakat" => "Cukup Kompeten",
                 "test_psikotes" => "Kompeten",
                 "test_numerik" => "Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
@@ -1086,64 +657,8 @@ class ClassificationController extends Controller
             ),
             array(
                 "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
                 "test_psikotes" => "Kompeten",
                 "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Lolos"
             ),
@@ -1156,503 +671,70 @@ class ClassificationController extends Controller
             ),
             array(
                 "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ), //27
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Belum Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Tidak Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
                 "test_psikotes" => "Cukup Kompeten",
                 "test_numerik" => "Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Lolos"
             ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Lolos"
-            ),
-
-            // Teknik Elektro Industri
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ), //40
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Tidak Lolos"
-            ), //41
-            array(
-                "test_minat_bakat" => "Belum Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Tidak Lolos"
-            ), //42
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Tidak Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ), //44
-            array(
-                "test_minat_bakat" => "Belum Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Tidak Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ), //61
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Tidak Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ), //63
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Tidak Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ), //67
-            array(
-                "test_minat_bakat" => "Belum Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Tidak Lolos"
-            ), //68
-            array(
-                "test_minat_bakat" => "Belum Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Tidak Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Teknik Elektro Industri",
-                "result" => "Lolos"
-            ),
-
-            // Layanan Perbankan Syariah
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ), //83
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Tidak Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ), //85
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Tidak Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Cukup Kompeten",
-                "minat_jurusan" => "Layanan Perbankan Syariah",
-                "result" => "Lolos"
-            ),
-
-            //Additional data (Teknik Pembuatan Kain)
             array(
                 "test_minat_bakat" => "Belum Kompeten",
                 "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
                 "test_numerik" => "Belum Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Tidak Lolos"
@@ -1665,37 +747,9 @@ class ClassificationController extends Controller
                 "result" => "Tidak Lolos"
             ),
             array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Tidak Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Tidak Lolos"
-            ),
-            array(
                 "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Kompeten",
+                "test_psikotes" => "Belum Kompeten",
                 "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Tidak Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Cukup Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Tidak Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Belum Kompeten",
-                "test_psikotes" => "Kompeten",
-                "test_numerik" => "Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Tidak Lolos"
             ),
@@ -1709,7 +763,7 @@ class ClassificationController extends Controller
             array(
                 "test_minat_bakat" => "Belum Kompeten",
                 "test_psikotes" => "Kompeten",
-                "test_numerik" => "Cukup Kompeten",
+                "test_numerik" => "Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Tidak Lolos"
             ),
@@ -1722,15 +776,8 @@ class ClassificationController extends Controller
             ),
             array(
                 "test_minat_bakat" => "Belum Kompeten",
-                "test_psikotes" => "Cukup Kompeten",
-                "test_numerik" => "Belum Kompeten",
-                "minat_jurusan" => "Teknik Pembuatan Kain",
-                "result" => "Tidak Lolos"
-            ),
-            array(
-                "test_minat_bakat" => "Belum Kompeten",
                 "test_psikotes" => "Kompeten",
-                "test_numerik" => "Belum Kompeten",
+                "test_numerik" => "Cukup Kompeten",
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Tidak Lolos"
             ),
@@ -1748,11 +795,115 @@ class ClassificationController extends Controller
                 "minat_jurusan" => "Teknik Pembuatan Kain",
                 "result" => "Tidak Lolos"
             ),
-
-            //Additional data (Teknik Elektro Industri)
+            array(
+                "test_minat_bakat" => "Belum Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Belum Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Pembuatan Kain",
+                "result" => "Tidak Lolos"
+            ),
+            // TEI
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Lolos"
+            ),
             array(
                 "test_minat_bakat" => "Belum Kompeten",
                 "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
                 "test_numerik" => "Belum Kompeten",
                 "minat_jurusan" => "Teknik Elektro Industri",
                 "result" => "Tidak Lolos"
@@ -1789,6 +940,20 @@ class ClassificationController extends Controller
                 "test_minat_bakat" => "Cukup Kompeten",
                 "test_psikotes" => "Belum Kompeten",
                 "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Belum Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Teknik Elektro Industri",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Belum Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
                 "minat_jurusan" => "Teknik Elektro Industri",
                 "result" => "Tidak Lolos"
             ),
@@ -1834,11 +999,101 @@ class ClassificationController extends Controller
                 "minat_jurusan" => "Teknik Elektro Industri",
                 "result" => "Tidak Lolos"
             ),
-
-            //Additional data (Layanan Perbankan Syariah)
+            //LPS
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Lolos"
+            ),
             array(
                 "test_minat_bakat" => "Belum Kompeten",
                 "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Belum Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Cukup Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Kompeten",
+                "test_psikotes" => "Belum Kompeten",
+                "test_numerik" => "Kompeten",
+                "minat_jurusan" => "Layanan Perbankan Syariah",
+                "result" => "Tidak Lolos"
+            ),
+            array(
+                "test_minat_bakat" => "Cukup Kompeten",
+                "test_psikotes" => "Cukup Kompeten",
                 "test_numerik" => "Belum Kompeten",
                 "minat_jurusan" => "Layanan Perbankan Syariah",
                 "result" => "Tidak Lolos"
