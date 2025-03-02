@@ -1272,8 +1272,27 @@ class ClassificationController extends Controller
             return redirect()->back()->withErrors(['duplicate' => 'Data klasifikasi untuk siswa ini sudah ada!']);
         }
 
-        $resultOptions = ['Lolos', 'Tidak Lolos'];
-        $result = $resultOptions[array_rand($resultOptions)];
+        // $resultOptions = ['Lolos', 'Tidak Lolos'];
+        // $result = $resultOptions[array_rand($resultOptions)];
+
+        $belumKompeten = "belum kompeten"; // Ubah ke lowercase untuk perbandingan
+        $kompetenDanCukup = ["kompeten", "cukup kompeten"];
+
+        // Ambil nilai dari input, lalu ubah ke lowercase dan hilangkan spasi tambahan
+        $testMinatBakat = strtolower(trim($validatedData['test_minat_bakat']));
+        $testPsikotes = strtolower(trim($validatedData['test_psikotes']));
+        $testNumerik = strtolower(trim($validatedData['test_numerik']));
+
+        // Cek jika ada salah satu nilai yang "Belum Kompeten"
+        if (
+            $testMinatBakat === $belumKompeten ||
+            $testPsikotes === $belumKompeten ||
+            $testNumerik === $belumKompeten
+        ) {
+            $result = "Tidak Lolos";
+        } else {
+            $result = "Lolos";
+        }
 
         $classification = Classification::create([
             'student_id' => $student->id,
