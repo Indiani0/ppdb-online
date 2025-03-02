@@ -1272,12 +1272,15 @@ class ClassificationController extends Controller
             return redirect()->back()->withErrors(['duplicate' => 'Data klasifikasi untuk siswa ini sudah ada!']);
         }
 
+        $resultOptions = ['Lolos', 'Tidak Lolos'];
+        $result = $resultOptions[array_rand($resultOptions)];
+
         $classification = Classification::create([
             'student_id' => $student->id,
             'test_minat_bakat' => $validatedData['test_minat_bakat'],
             'test_psikotes' => $validatedData['test_psikotes'],
             'test_numerik' => $validatedData['test_numerik'],
-            'result' => 'Belum Diproses', // Default hasil klasifikasi
+            'result' => $result,
         ]);
 
         return redirect()->route('classifications.index')->with('success', 'Data klasifikasi berhasil disimpan.');
