@@ -166,6 +166,24 @@
                                     echo $stringTree;
                                 @endphp
                             </pre>
+
+                        <table>
+                            <tr>
+                                <td>Nilai Entropy Total : 0,970064152</td>
+                            </tr>
+                            <tr>
+                                <td>Nilai Gain Tes Minat Bakat = 0,516054161</td>
+                            </tr>
+                            <tr>
+                                <td>Nilai Gain Tes Psikotes = 0,426514729</td>
+                            </tr>
+                            <tr>
+                                <td>Nilai Gain Tes Numerik = 0,54157362</td>
+                            </tr>
+                            <tr>
+                                <td>Nilai Gain Minat Jurusan = 0,390806677</td>
+                            </tr>
+                        </table><br>
                         <p
                             style="padding: 10px; background-color: #28a745; color: white; border-radius: 5px; text-align:center; font-weight: bold;">
                             Hasil Klasifikasi : {{ $classification->result }}
